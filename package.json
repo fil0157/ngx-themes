@@ -13,7 +13,7 @@
     "lib:build": "ng build @fil0157/ngx-themes --prod",
     "lib:lint": "ng lint @fil0157/ngx-themes",
     "lib:lint:fix": "ng lint @fil0157/ngx-themes --fix",
-    "lib:publish": "npm run lib:build && cd dist/ngx-themes/lib && npm pack npm publish"
+    "lib:publish": "npm run lib:build && cd dist/ngx-themes/lib && npm pack && npm publish"
   },
   "private": true,
   "dependencies": {
