@@ -17,8 +17,8 @@
     ],
     "paths": {
       "@fil0157/ngx-themes": [
-        "dist/fil0157/ngx-themes/fil0157-ngx-themes",
-        "dist/fil0157/ngx-themes"
+        "dist/ngx-themes/lib/fil0157-ngx-themes",
+        "dist/ngx-themes/lib"
       ]
     }
   },

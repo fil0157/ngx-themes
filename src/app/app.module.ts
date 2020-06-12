@@ -5,9 +5,12 @@ import { NgModule } from '@angular/core';
 // App
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ThemesFactory } from './factories';
 
 // Project
-// import {  } from '@fil0157/ngx-themes';
+import { NgxThemesModule } from '@fil0157/ngx-themes';
+
+
 
 @NgModule({
   declarations: [
@@ -15,9 +18,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxThemesModule.forRoot(ThemesFactory),
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

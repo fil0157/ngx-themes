@@ -1,0 +1,13 @@
+span {
+    color: var(--color);
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    margin: 30px;
+    font-weight: bold;
+    border: none;
+    background: var(--button-background);
+    color: var(--button-color);
+}
