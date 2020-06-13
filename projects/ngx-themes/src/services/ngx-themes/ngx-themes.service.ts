@@ -45,6 +45,11 @@ export class NgxThemesService {
   }
 
 
+  getThemeOther(name: string = this.activeTheme): any | undefined {
+    return this.getTheme(name).other ? this.getTheme(name).other : undefined
+  }
+
+
   getActiveTheme(): Theme {
     if (this.activeTheme) {
       return this.getTheme(this.activeTheme);
