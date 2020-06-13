@@ -21,29 +21,21 @@ export class AppComponent {
 
   chengeTheme(name) {
     this.themes.useTheme(name);
-
-    this.themes.log();
   }
 
 
   toggleTheme(): void {
     this.themes.toggleTheme();
-
-    this.themes.log();
   }
 
 
   clickDefaultTheme() {
     this.themes.useDefaultTheme();
-
-    this.themes.log();
   }
 
 
   clickRemoveTheme() {
     this.themes.removeTheme('darkTheme');
-
-    this.themes.log();
   }
 
 
