@@ -10,5 +10,4 @@ export interface ThemesSetup {
     defaultValues?: {
         [key: string]: string;
     };
-    other?: any;
 }
