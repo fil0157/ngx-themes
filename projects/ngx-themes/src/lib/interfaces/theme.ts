@@ -1,5 +1,6 @@
 export interface Theme {
-    name: string;
+    identifier: string;
+    name?: string;
     values: {
         [key: string]: string;
     };
