@@ -1,2 +1,2 @@
 export * from './theme';
-export * from './theme-setup';
+export * from './theme-config';
