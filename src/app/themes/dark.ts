@@ -4,7 +4,7 @@ import { Theme } from '@fil0157/ngx-themes';
 
 
 export const DarkTheme: Theme = {
-    name: 'darkTheme',
+    identifier: 'darkTheme',
     values: {
     '--color': '#fff',
     '--button-color': '#fff',
