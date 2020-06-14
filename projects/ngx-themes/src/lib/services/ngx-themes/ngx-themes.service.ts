@@ -1,5 +1,5 @@
 // Angular
-import { Injectable, Inject, EventEmitter } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 // Project
