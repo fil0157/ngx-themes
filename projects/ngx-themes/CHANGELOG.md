@@ -1,6 +1,12 @@
 Changelog
 =======
 
+## 2.0.0 (June 14, 2020)
+- Add getAllThemes() function
+- Interface Theme changed
+- Rename interface ThemeSetup to ThemeConfig
+- Fix and optimization
+
 ## 1.2.0 (June 13, 2020)
 - Add getThemeOther() function
 
