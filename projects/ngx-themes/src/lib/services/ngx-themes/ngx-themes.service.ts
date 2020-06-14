@@ -64,6 +64,11 @@ export class NgxThemesService {
   }
 
 
+  getAllThemes(): Theme[] {
+    return this.themes
+  }
+
+
   useTheme(name: string): void {
     this.activeTheme = name;
     this.applyTheme(this.activeTheme);
