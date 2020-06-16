@@ -145,8 +145,8 @@ export class NgxThemesService {
   }
 
 
-  camelCaseToKebabCase(str: string): string {
-    return str.replace(/[\w]([A-Z])/g, s => {
+  camelCaseToKebabCase(expression: string): string {
+    return expression.replace(/[\w]([A-Z])/g, s => {
       return s[0] + '-' + s[1];
     }).toLowerCase();
   }
