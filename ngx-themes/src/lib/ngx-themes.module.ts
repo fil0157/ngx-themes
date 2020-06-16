@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 // Project
 import { NgxThemesService } from './services';
 import { THEMES, ACTIVE_THEME, DEFAULT_THEME } from './themes';
-import { ThemesConfig } from './interfaces';
+import { ThemeConfig } from './interfaces';
 
 
 
@@ -18,21 +18,21 @@ import { ThemesConfig } from './interfaces';
   ],
 })
 export class NgxThemesModule {
-  static forRoot(themesConfig: ThemesConfig): ModuleWithProviders {
+  static forRoot(themeConfig: ThemeConfig): ModuleWithProviders {
     return {
       ngModule: NgxThemesModule,
       providers: [
         {
           provide: THEMES,
-          useValue: themesConfig.themes
+          useValue: themeConfig.themes
         },
         {
           provide: ACTIVE_THEME,
-          useValue: themesConfig.active
+          useValue: themeConfig.active
         },
         {
           provide: DEFAULT_THEME,
-          useValue: themesConfig.default
+          useValue: themeConfig.default
         },
       ]
     };

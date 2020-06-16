@@ -3,7 +3,7 @@ import { Theme } from './theme';
 
 
 
-export interface ThemesConfig {
+export interface ThemeConfig {
     themes: Theme[];
     active?: string;
     default?: string;
