@@ -123,9 +123,9 @@ export class NgxThemesService {
       this.setProperty(key, selectTheme.values[key]);
     }
     for (const theme of this.themes) {
-      element.classList.remove(this.camelCaseToKebabCase(theme.name));
+      element.classList.remove(this.camelCaseToKebabCase(theme.identifier));
     }
-    element.classList.add(this.camelCaseToKebabCase(selectTheme.name));
+    element.classList.add(this.camelCaseToKebabCase(selectTheme.identifier));
   }
 
 
