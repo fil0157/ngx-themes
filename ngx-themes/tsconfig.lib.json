@@ -1,7 +1,7 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../out-tsc/ngx-themes/lib",
+    "outDir": "../out-tsc/ngx-themes/lib",
     "target": "es2015",
     "declaration": true,
     "inlineSources": true,
