@@ -26,27 +26,27 @@ export class NgxThemesService {
 
   initService(): void {
     if (!this.themes.length) throw new Error(`You have no themes.`);
-    if (!this.defaultTheme || (this.themes.findIndex(f => f.name === this.defaultTheme) === -1)) {
-      this.defaultTheme = (this.themes.findIndex(f => f.name === this.defaultTheme) === -1) ? this.themes[0].name : this.activeTheme;
+    if (!this.defaultTheme || (this.themes.findIndex(f => f.identifier === this.defaultTheme) === -1)) {
+      this.defaultTheme = (this.themes.findIndex(f => f.identifier === this.defaultTheme) === -1) ? this.themes[0].identifier : this.activeTheme;
     }
-    if (!this.activeTheme || (this.themes.findIndex(f => f.name === this.activeTheme) === -1)) {
-      this.activeTheme = this.defaultTheme || this.themes[0].name;
+    if (!this.activeTheme || (this.themes.findIndex(f => f.identifier === this.activeTheme) === -1)) {
+      this.activeTheme = this.defaultTheme || this.themes[0].identifier;
     }
     this.applyTheme(this.activeTheme);
   }
 
 
-  getTheme(name: string): Theme {
-    const theme = this.themes.find(f => f.name === name);
+  getTheme(identifier: string): Theme {
+    const theme = this.themes.find(f => f.identifier === identifier);
     if (!theme) {
-      throw new Error(`Theme not found: '${name}'`);
+      throw new Error(`Theme not found: '${identifier}'`);
     }
     return theme;
   }
 
 
-  getThemeOther(name: string = this.activeTheme): any | undefined {
-    return this.getTheme(name).other ? this.getTheme(name).other : undefined
+  getThemeOther(identifier: string = this.activeTheme): any | undefined {
+    return this.getTheme(identifier).other ? this.getTheme(identifier).other : undefined
   }
 
 
@@ -69,8 +69,8 @@ export class NgxThemesService {
   }
 
 
-  useTheme(name: string): void {
-    this.activeTheme = name;
+  useTheme(identifier: string): void {
+    this.activeTheme = identifier;
     this.applyTheme(this.activeTheme);
   }
 
@@ -82,10 +82,10 @@ export class NgxThemesService {
 
 
   toggleTheme(firstTheme: number = 0, secondTheme: number = 1): void {
-    if (this.activeTheme === this.themes[firstTheme].name) {
-      this.activeTheme = this.themes[secondTheme] ? this.themes[secondTheme].name : this.defaultTheme;
+    if (this.activeTheme === this.themes[firstTheme].identifier) {
+      this.activeTheme = this.themes[secondTheme] ? this.themes[secondTheme].identifier : this.defaultTheme;
     } else {
-      this.activeTheme = this.themes[firstTheme].name;
+      this.activeTheme = this.themes[firstTheme].identifier;
     }
     this.applyTheme(this.activeTheme);
   }
@@ -96,29 +96,29 @@ export class NgxThemesService {
   }
 
 
-  removeTheme(name: string) {
-    const themeIndex: number = this.themes.findIndex(f => f.name === name);
+  removeTheme(identifier: string) {
+    const themeIndex: number = this.themes.findIndex(f => f.identifier === identifier);
     if (themeIndex !== -1) this.themes.splice(themeIndex, 1);
     this.initService();
   }
 
 
-  updateTheme(name: string, values: { [key: string]: string; }) {
-    const theme = this.getTheme(name);
+  updateTheme(identifier: string, values: { [key: string]: string; }) {
+    const theme = this.getTheme(identifier);
     theme.values = {
       ...theme.values,
       ...values
     };
 
-    if (name === this.activeTheme) {
-      this.applyTheme(name);
+    if (identifier === this.activeTheme) {
+      this.applyTheme(identifier);
     }
   }
 
 
-  applyTheme(name: string): void {
+  applyTheme(identifier: string): void {
     const element: HTMLElement = this.getElement();
-    const selectTheme: Theme = this.getTheme(name);
+    const selectTheme: Theme = this.getTheme(identifier);
     for (const key in selectTheme.values) {
       this.setProperty(key, selectTheme.values[key]);
     }
