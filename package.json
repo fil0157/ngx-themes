@@ -15,7 +15,6 @@
     "lib:lint:fix": "ng lint @fil0157/ngx-themes --fix",
     "lib:publish": "npm run lib:build && cd dist/ngx-themes/lib && npm pack && npm publish"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.6",
     "@angular/common": "~9.1.6",
