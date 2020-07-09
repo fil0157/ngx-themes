@@ -6,7 +6,8 @@ import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { 
   HomeComponent, 
   VersionComponent,
- } from './pages';
+  LicenseComponent,
+} from './pages';
 
 
 
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'version',
     component: VersionComponent,
+  },
+  {
+    path: 'license',
+    component: LicenseComponent,
   },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

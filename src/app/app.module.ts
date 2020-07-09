@@ -9,7 +9,8 @@ import { ThemesConfig } from './config';
 import { 
   HomeComponent, 
   VersionComponent,
- } from './pages';
+  LicenseComponent,
+} from './pages';
 
 // Project
 import { NgxThemesModule } from '@fil0157/ngx-themes';
@@ -21,6 +22,7 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
     AppComponent,
     HomeComponent,
     VersionComponent,
+    LicenseComponent,
   ],
   imports: [
     BrowserModule,
