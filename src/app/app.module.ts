@@ -6,7 +6,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ThemesConfig } from './config';
-import { HomeComponent } from './pages';
+import { 
+  HomeComponent, 
+  VersionComponent,
+ } from './pages';
 
 // Project
 import { NgxThemesModule } from '@fil0157/ngx-themes';
@@ -17,6 +20,7 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
   declarations: [
     AppComponent,
     HomeComponent,
+    VersionComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
 // App
-import { HomeComponent } from './pages';
+import { 
+  HomeComponent, 
+  VersionComponent,
+ } from './pages';
 
 
 
@@ -12,6 +15,10 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     pathMatch: 'full',
+  },
+  {
+    path: 'version',
+    component: VersionComponent,
   },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
