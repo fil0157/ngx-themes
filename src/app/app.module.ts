@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 // App
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ThemesFactory } from './factories';
+import { ThemesConfig } from './config';
 
 // Project
 import { NgxThemesModule } from '@fil0157/ngx-themes';
@@ -19,7 +19,7 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxThemesModule.forRoot(ThemesFactory),
+    NgxThemesModule.forRoot(ThemesConfig),
   ],
   providers: [ ],
   bootstrap: [AppComponent]

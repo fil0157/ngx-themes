@@ -6,7 +6,7 @@ import { DarkTheme, LightTheme, BlueTheme } from 'src/app/themes';
 
 
 
-export const ThemesFactory: ThemeConfig = {
+export const ThemesConfig: ThemeConfig = {
     themes: [
         LightTheme,
         DarkTheme,
