@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ThemesConfig } from './config';
+import { HomeComponent } from './pages';
 
 // Project
 import { NgxThemesModule } from '@fil0157/ngx-themes';
@@ -14,7 +15,8 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
