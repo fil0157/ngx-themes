@@ -1,4 +1,14 @@
+@charset 'UTF-8';
+
 @import 'normalize.css';
+
+@import './app/styles/fonts';
+
+
+
+* {
+    font-family: RobotoRegular;
+}
 
 html,
 body {
