@@ -7,6 +7,7 @@ import {
   HomeComponent, 
   VersionComponent,
   LicenseComponent,
+  DocsComponent,
 } from './pages';
 
 
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'license',
     component: LicenseComponent,
+  },
+  {
+    path: 'docs',
+    component: DocsComponent,
   },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

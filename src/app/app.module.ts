@@ -10,6 +10,7 @@ import {
   HomeComponent, 
   VersionComponent,
   LicenseComponent,
+  DocsComponent,
 } from './pages';
 
 // Project
@@ -23,6 +24,7 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
     HomeComponent,
     VersionComponent,
     LicenseComponent,
+    DocsComponent,
   ],
   imports: [
     BrowserModule,
