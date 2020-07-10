@@ -11,6 +11,7 @@ import {
   VersionComponent,
   LicenseComponent,
   DocsComponent,
+  DemoComponent,
 } from './pages';
 
 // Project
@@ -25,6 +26,7 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
     VersionComponent,
     LicenseComponent,
     DocsComponent,
+    DemoComponent,
   ],
   imports: [
     BrowserModule,
