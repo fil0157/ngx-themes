@@ -30,10 +30,16 @@ const routes: Routes = [
   {
     path: 'docs',
     component: DocsComponent,
+    children: [
+      { path: '**', redirectTo: '/docs', pathMatch: 'full' }
+    ]
   },
   {
     path: 'demo',
     component: DemoComponent,
+    children: [
+      { path: '**', redirectTo: '/demo', pathMatch: 'full' }
+    ]
   },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
