@@ -13,6 +13,9 @@ import {
   DocsComponent,
   DemoComponent,
 } from './pages';
+import { 
+  HeaderComponent, 
+} from './components';
 
 // Project
 import { NgxThemesModule } from '@fil0157/ngx-themes';
@@ -27,6 +30,7 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
     LicenseComponent,
     DocsComponent,
     DemoComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
