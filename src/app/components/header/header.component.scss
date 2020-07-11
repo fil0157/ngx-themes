@@ -1,0 +1,60 @@
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--background);
+    color: var(--color);
+    border-bottom: 2px solid var(--border);
+    padding: 15px 20px;
+    
+    & > a.link {
+        height: 34px;
+        line-height: 30px;
+        padding: 0 10px;
+        margin: 0 10px;
+        color: var(--color);
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        border: 2px solid var(--border);
+        border-radius: 10px;
+        opacity: .8;
+        transition: .25s;
+        
+        &:hover {
+            background: #ffffff50;
+            opacity: 1;
+        }
+    }
+}
+
+
+.logo {
+    
+    &--link {
+        color: var(--color);
+        display: inline-block;
+        height: 34px;
+        line-height: 34px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 21px;
+        cursor: pointer;
+        
+        &__light {
+            font-weight: 400;
+        }
+    }
+}
+
+
+.version {
+    display: inline-block;
+    height: 34px;
+    line-height: 38px;
+    color: var(--color);
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .8;
+    margin: 0 auto 0 5px;
+}
