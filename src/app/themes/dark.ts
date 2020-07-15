@@ -7,6 +7,7 @@ export const DarkTheme: Theme = {
     identifier: 'darkTheme',
     values: {
     '--color': '#fff',
+    '--color-secondary': '#aaa',
     '--border': '#ddd',
     '--button-color': '#fff',
     '--background': '#3e3e3e',

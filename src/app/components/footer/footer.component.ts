@@ -1,6 +1,9 @@
 // Angulur
 import { Component, OnInit } from '@angular/core';
 
+// App
+import { Config } from 'src/app/config';
+
 
 
 @Component({
@@ -10,9 +13,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  public config;
+  public readonly thisYear = new Date().getFullYear();
+
   constructor() { }
 
   ngOnInit(): void {
+    this.config = Config
   }
 
 }

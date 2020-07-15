@@ -31,6 +31,7 @@ const routes: Routes = [
     path: 'docs',
     component: DocsComponent,
     children: [
+  //     { path: '', component: HomeComponent },
       { path: '**', redirectTo: '/docs', pathMatch: 'full' }
     ]
   },
@@ -38,6 +39,7 @@ const routes: Routes = [
     path: 'demo',
     component: DemoComponent,
     children: [
+  //     { path: '', component: MainComponent },
       { path: '**', redirectTo: '/demo', pathMatch: 'full' }
     ]
   },
