@@ -6,6 +6,10 @@ footer {
     background: var(--background);
 }
 
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+}
 
 .top {
     display: flex;

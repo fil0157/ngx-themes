@@ -1,63 +1,67 @@
 <footer>
-    <div class="top">
-        <div class="top--left">
+    <div class="container">
 
-            <div class="top--title">
-                <span class="top--title__bold">ngx-</span>
-                <span class="">themes</span>
+        <div class="top">
+            <div class="top--left">
+
+                <div class="top--title">
+                    <span class="top--title__bold">ngx-</span>
+                    <span class="">themes</span>
+                </div>
+
+                <div class="top--subtitle">
+                    Current version: <strong>v{{ config.libVersion }}</strong>
+                </div>
+
             </div>
+            <div class="top--right">
+                Designed and built with love by 
+                <strong>
+                    <a href="https://github.com/fil0157"
+                        target="_blank"
+                        class="link">
+                        Filipp Chibisov
+                    </a>
+                </strong>
+                for the Angular community.
 
-            <div class="top--subtitle">
-                Current version: <strong>v{{ config.libVersion }}</strong>
-            </div>
+                <br>
 
-        </div>
-        <div class="top--right">
-            Designed and built with love by 
-            <strong>
-                <a href="https://github.com/fil0157"
+                Code available on 
+                <a href="https://github.com/fil0157/ngx-themes"
                     target="_blank"
                     class="link">
-                    Filipp Chibisov
+                    our GitHub repository
                 </a>
-            </strong>
-            for the Angular community.
+                and released under the 
+                <strong>
+                    MIT License
+                </strong>.
+            </div>
+        </div>
 
-            <br>
+        <div class="ruler"></div>
 
-            Code available on 
-            <a href="https://github.com/fil0157/ngx-themes"
-                target="_blank"
+        <div class="bottom">
+
+            <div class="bottom__left">
+                © 2020 - {{ thisYear }} <strong>@fil0157/ngx-themes</strong>
+            </div>
+
+            <div class="bottom__right">
+
+                <a routerLink="/license"
                 class="link">
-                our GitHub repository
-            </a>
-            and released under the 
-            <strong>
                 MIT License
-            </strong>.
-        </div>
-    </div>
+                </a>
 
-    <div class="ruler"></div>
+                <a routerLink="/version"
+                class="link">
+                Version
+                </a>
 
-    <div class="bottom">
-
-        <div class="bottom__left">
-            © 2020 - {{ thisYear }} <strong>@fil0157/ngx-themes</strong>
+            </div>
         </div>
 
-        <div class="bottom__right">
-
-            <a routerLink="/license"
-               class="link">
-               MIT License
-            </a>
-
-            <a routerLink="/version"
-               class="link">
-               Version
-            </a>
-
-        </div>
     </div>
 </footer>
