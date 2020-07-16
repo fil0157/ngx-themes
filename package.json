@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint ngx-themes",
     "lint:fix": "ng lint ngx-themes --fix",
+    "publish": "ng build --prod --output-path docs --base-href /ngx-themes/",
     "e2e": "ng e2e",
     "lib:start": "ng build @fil0157/ngx-themes --watch",
     "lib:build": "ng build @fil0157/ngx-themes --prod",
