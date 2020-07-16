@@ -126,36 +126,36 @@
     },
     "@fil0157/ngx-themes": {
       "projectType": "library",
-      "root": "ngx-themes",
-      "sourceRoot": "ngx-themes/src",
+      "root": "src/ngx-themes",
+      "sourceRoot": "src/ngx-themes/src",
       "prefix": "ngx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "ngx-themes/tsconfig.lib.json",
-            "project": "ngx-themes/ng-package.json"
+            "tsConfig": "src/ngx-themes/tsconfig.lib.json",
+            "project": "src/ngx-themes/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "ngx-themes/tsconfig.lib.prod.json"
+              "tsConfig": "src/ngx-themes/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "ngx-themes/src/test.ts",
-            "tsConfig": "ngx-themes/tsconfig.spec.json",
-            "karmaConfig": "ngx-themes/karma.conf.js"
+            "main": "src/ngx-themes/src/test.ts",
+            "tsConfig": "src/ngx-themes/tsconfig.spec.json",
+            "karmaConfig": "src/ngx-themes/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "ngx-themes/tsconfig.lib.json",
-              "ngx-themes/tsconfig.spec.json"
+              "src/ngx-themes/tsconfig.lib.json",
+              "src/ngx-themes/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
