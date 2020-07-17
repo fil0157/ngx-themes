@@ -1,6 +1,7 @@
 // Angular
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 // App
 import { AppRoutingModule } from './app-routing.module';
@@ -39,6 +40,7 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     NgxThemesModule.forRoot(ThemesConfig),
   ],
   providers: [ ],
