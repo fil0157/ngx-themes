@@ -1,5 +1,10 @@
-Changelog
-=======
+Library changelog
+
+---
+
+You can find the application changes [here](../../CHANGELOG.md)
+
+---
 
 ## 2.0.0 (June 14, 2020)
 - Add getAllThemes() function
