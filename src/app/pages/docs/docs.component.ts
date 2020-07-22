@@ -40,13 +40,25 @@ export class DocsComponent implements OnInit {
     switch (doc) {
 
       case undefined:
-        this.setContent('assets/docs/')
+        this.setContent('assets/docs/intro_ru.md')
         break;
 
       case 'start':
-        this.setContent('assets/docs/')
+        this.setContent('assets/docs/start_ru.md')
         break;
-  
+
+      case 'config':
+        this.setContent('assets/docs/config_ru.md')
+        break;
+
+      case 'api':
+        this.setContent('assets/docs/api_ru.md')
+        break;  
+
+      case 'faq':
+        this.setContent('assets/docs/faq_ru.md')
+        break;
+                
       default:
         this.router.navigate(['/docs'])
         break;
