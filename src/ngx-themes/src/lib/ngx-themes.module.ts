@@ -18,7 +18,7 @@ import { ThemeConfig } from './interfaces';
   ],
 })
 export class NgxThemesModule {
-  static forRoot(themeConfig: ThemeConfig): ModuleWithProviders {
+  static forRoot(themeConfig: ThemeConfig): ModuleWithProviders<NgxThemesModule> {
     return {
       ngModule: NgxThemesModule,
       providers: [
