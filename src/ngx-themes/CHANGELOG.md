@@ -6,7 +6,7 @@ You can find the application changes [here](../../CHANGELOG.md)
 
 ---
 
-## 2.0.0 (June 14, 2020)
+## 2.0.0 (July 24, 2020)
 - Add getAllThemes() function
 - Interface Theme changed
 - Rename interface ThemeSetup to ThemeConfig
