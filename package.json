@@ -15,7 +15,7 @@
     "lib:lint": "ng lint @fil0157/ngx-themes",
     "lib:lint:fix": "ng lint @fil0157/ngx-themes --fix",
     "lib:publish": "npm run lib:build && cd dist/ngx-themes/lib && npm pack && npm publish",
-    "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
+    "postinstall": "ngcc"
   },
   "dependencies": {
     "@angular/animations": "~9.1.6",
