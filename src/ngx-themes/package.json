@@ -8,6 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/fil0157/ngx-themes.git"
   },
+  "homepage": "https://fil0157.github.io/ngx-themes",
   "peerDependencies": {
     "@angular/common": "^9.1.9",
     "@angular/core": "^9.1.9"
