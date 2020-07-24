@@ -1,6 +1,14 @@
 {
   "name": "ngx-themes",
   "version": "2.1.0",
+  "description": "Angular module for creating themes in angular applications using native css variables",
+  "author": "fil0157",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fil0157/ngx-themes.git"
+  },
+  "homepage": "https://fil0157.github.io/ngx-themes",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -53,5 +61,22 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.7"
-  }
+  },
+  "keywords": [
+    "angular",
+    "angular themes",
+    "ngx",
+    "ngx-themes",
+    "themes",
+    "frontand",
+    "typescript",
+    "javascript",
+    "js",
+    "ts",
+    "page theme",
+    "module",
+    "css",
+    "variables",
+    "castom theme"
+  ]
 }
