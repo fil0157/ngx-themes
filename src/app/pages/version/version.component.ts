@@ -1,6 +1,9 @@
 // Angular
 import { Component, OnInit } from '@angular/core';
 
+// App
+import { Config } from 'src/app/config';
+
 
 
 @Component({
@@ -10,9 +13,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VersionComponent implements OnInit {
 
+  public config;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.config = Config
   }
 
 }
