@@ -1,6 +1,7 @@
 # @fil0157/ngx-themes
 
-> `@fil0157/ngx-themes` is a `Angular` library for implementing and managing themes in any `Angular` application. The project was created using the current versions of `TypeScript` and `Angular`.
+> `@fil0157/ngx-themes` is a `Angular` library for implementing and managing themes in any `Angular` application.
+The project was created using the current versions of `TypeScript` and `Angular`.
 
 [![license](https://badgen.net/npm/license/@fil0157/ngx-themes)](LICENSE.md)
 [![npm](https://badgen.net/npm/v/@fil0157/ngx-themes)](https://www.npmjs.com/package/@fil0157/ngx-themes)
@@ -46,7 +47,8 @@ npm i @fil0157/ngx-themes
 
 ## Changelog
 
-For changelogs, check out [the Releases section of @fil0157/ngx-themes](https://github.com/fil0157/ngx-themes/releases) or the [CHANGELOG.md](CHANGELOG.md).
+For changelogs, check out [the Releases section of @fil0157/ngx-themes](https://github.com/fil0157/ngx-themes/releases)
+or the [CHANGELOG.md](CHANGELOG.md).
 
 ## Copyright
 
