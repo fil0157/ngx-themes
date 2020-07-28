@@ -1,25 +1,19 @@
-Application changelog
+# Changelog
 
----
-
-You can find the library changes [here](src/ngx-themes/CHANGELOG.md)
-
----
-
-## 2.1.0 (July 22, 2020)
-- Added documentation
-
-## 2.0.0 (July 21, 2020)
-- Release on github pages
-
-## 1.0.2
+## 2.0.1 (July 28, 2020)
 - Fix
 
-## 1.0.1
-- Fix
+## 2.0.0 (July 24, 2020)
+- Add getAllThemes() function
+- Interface Theme changed
+- Rename interface ThemeSetup to ThemeConfig
+- Fix and optimization
 
-## 1.0.0
-- Fix
+## 1.2.0 (June 13, 2020)
+- Add getThemeOther() function
 
-## 9.0.0
+## 1.1.0 (June 13, 2020)
+- Fix interfaces
+
+## 1.0.0 (June 12, 2020)
 - Project start

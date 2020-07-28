@@ -1,27 +1,75 @@
-# NgxThemes
+# @fil0157/ngx-themes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+> `@fil0157/ngx-themes` is a `Angular` library for implementing and managing themes in any `Angular` application. The project was created using the current versions of `TypeScript` and `Angular`.
 
-## Development server
+[![license](https://badgen.net/npm/license/@fil0157/ngx-themes)](LICENSE.md)
+[![npm](https://badgen.net/npm/v/@fil0157/ngx-themes)](https://www.npmjs.com/package/@fil0157/ngx-themes)
+[![downloads](https://badgen.net/npm/dt/@fil0157/ngx-themes)](https://www.npmjs.com/package/@fil0157/ngx-themes)
+[![release](https://badgen.net/github/release/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes/releases)
+[![releases](https://badgen.net/github/releases/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes/releases)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[![commits](https://badgen.net/github/commits/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes/commits/master)
+[![commit](https://badgen.net/github/last-commit/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes/commits/master)
+[![install size](https://badgen.net/packagephobia/install/@fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
+[![publish size](https://badgen.net/packagephobia/publish/@fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
 
-## Code scaffolding
+[![dep](https://badgen.net/david/dep/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
+[![dev](https://badgen.net/david/dev/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
+[![peer](https://badgen.net/david/peer/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
+[![optional](https://badgen.net/david/optional/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Table of Contents
 
-## Build
+- [Quickstart](#Quickstart)
+- [Documentation](#documentation)
+- [Changelog](#Changelog)
+- [Copyright](#Copyright)
+- [MIT License](#MIT-License)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Quickstart
 
-## Running unit tests
+**Clone the repo:**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+``` bash
+git clone https://github.com/fil0157/ngx-themes.git
+```
 
-## Running end-to-end tests
+**Install with [npm](https://www.npmjs.com):**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+``` bash
+npm i @fil0157/ngx-themes
+```
 
-## Further help
+## Documentation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[The documentation](https://fil0157.github.io/ngx-themes/docs) can be found at <https://fil0157.github.io/ngx-themes>. 
+
+## Changelog
+
+For changelogs, check out [the Releases section of @fil0157/ngx-themes](https://github.com/fil0157/ngx-themes/releases) or the [CHANGELOG.md](CHANGELOG.md).
+
+## Copyright
+
+Code Copyright 2020 @fil0157/ngx-themes.
+
+## MIT License
+
+Copyright (c) 2020 @fil0157/ngx-themes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
