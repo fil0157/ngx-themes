@@ -1,5 +1,5 @@
 {
-  "name": "ngx-themes",
+  "name": "@fil0157/ngx-themes",
   "version": "2.0.1",
   "description": "Angular module for creating themes in angular applications using native css variables",
   "author": "fil0157",
