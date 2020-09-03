@@ -1,35 +1,26 @@
-<app-header></app-header>
+<main>
 
-<div class="container">
+    <app-header></app-header>
 
-    <div class="block">
+    <div class="container">
 
-        <div class="block--version">
-            <div class="block--version--text">Library version: v</div>
-            <div class="block--version--config">{{config.libVersion}}</div>
-        </div>
+        <div class="block">
 
-        <div class="block--links">
-            <a href="https://github.com/fil0157/ngx-themes/tree/master/src/ngx-themes" target="_blank" class="block--links--link">Git Hub</a>
-            <a href="https://www.npmjs.com/package/@fil0157/ngx-themes" target="_blank" class="block--links--link">NPM</a>
-        </div>
+            <div class="block--version">
+                <div class="block--version--text">Version: v</div>
+                <div class="block--version--config">{{config.version}}</div>
+            </div>
 
-    </div>
+            <div class="block--links">
+                <a routerLink="/" class="block--links--link">Website</a>
+                <a href="https://github.com/fil0157/ngx-themes" target="_blank" class="block--links--link">Git Hub</a>
+                <a href="https://www.npmjs.com/package/@fil0157/ngx-themes" target="_blank" class="block--links--link">NPM</a>
+            </div>
 
-    <div class="block">
-
-        <div class="block--version">
-            <div class="block--version--text">Application version: v</div>
-            <div class="block--version--config">{{config.appVersion}}</div>
-        </div>
-
-        <div class="block--links">
-            <a routerLink="/" class="block--links--link">Website</a>
-            <a href="https://github.com/fil0157/ngx-themes/tree/master/src/app" target="_blank" class="block--links--link">Git Hub</a>
         </div>
 
     </div>
 
-</div>
+    <app-footer></app-footer>
 
-<app-footer></app-footer>
+</main>
