@@ -1,3 +1,24 @@
-<app-header></app-header>
-<p>home works!</p>
-<app-footer></app-footer>
+<main>
+
+    <app-header></app-header>
+
+    <div class="container">
+
+        <div class="preview">
+            <div class="title">@fil0157/ngx-themes</div>
+            <div class="description">Angular module for creating themes in angular applications using native css variables</div>
+            <div class="author">Author: <span>@fil0157</span></div>
+        </div>
+
+        <div class="demo">
+            <div class="demo--button" (click)="ngxThemes.toggleTheme()">Toggle theme</div>
+            <div class="demo--button" (click)="ngxThemes.useTheme('lightTheme')">Light theme</div>
+            <div class="demo--button" (click)="ngxThemes.useTheme('darkTheme')">Dark theme</div>
+            <div class="demo--button demo--button__more" routerLink="demo">More demo</div>
+        </div>
+
+    </div>
+
+    <app-footer></app-footer>
+
+</main>

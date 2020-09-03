@@ -18,6 +18,8 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    background-color: var(--background);
+    color: var(--color);
 }
 
 .container {
@@ -38,4 +40,10 @@ body {
 
 table {
     width: 100%;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
 }
