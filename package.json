@@ -24,7 +24,7 @@
     "lib:lint": "ng lint @fil0157/ngx-themes",
     "lib:lint:fix": "ng lint @fil0157/ngx-themes --fix",
     "lib:publish": "npm run lib:build && cd dist/lib && npm pack && npm publish",
-    "postinstall": "ngcc"
+    "ngcc": "ngcc"
   },
   "dependencies": {},
   "devDependencies": {
