@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.0.3 (September 4, 2020)
+- Fix
+
 ## 2.0.2 (August 8, 2020)
 - Tests created
 
