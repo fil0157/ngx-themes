@@ -5,7 +5,7 @@ import { TestBed, getTestBed, inject } from '@angular/core/testing';
 import { NgxThemesService } from './ngx-themes.service';
 import { NgxThemesModule } from '../../ngx-themes.module';
 import { Theme, ThemeConfig } from '../../interfaces';
-import { THEMES, ACTIVE_THEME, DEFAULT_THEME } from '../../tools';
+import { THEMES_CONFIG } from '../../tools';
 
 
 
@@ -63,9 +63,7 @@ describe('NgxThemesService', () => {
     TestBed.configureTestingModule({
       providers: [
         NgxThemesService,
-        { provide: THEMES, useValue: JSON.parse(JSON.stringify(ThemesConfig.themes)) },
-        { provide: ACTIVE_THEME, useValue: JSON.parse(JSON.stringify(ThemesConfig.active)) },
-        { provide: DEFAULT_THEME, useValue: JSON.parse(JSON.stringify(ThemesConfig.default)) }
+        { provide: THEMES_CONFIG, useValue: JSON.parse(JSON.stringify(ThemesConfig)) },
       ]
     });
     service = TestBed.inject(NgxThemesService);

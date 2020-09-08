@@ -4,7 +4,8 @@ import { DOCUMENT } from '@angular/common';
 
 // Project
 import { Theme } from '../../interfaces/theme';
-import { THEMES, ACTIVE_THEME, DEFAULT_THEME } from '../../tools';
+import { THEMES_CONFIG } from '../../tools';
+import { ThemeConfig } from '../../interfaces';
 
 
 
@@ -13,13 +14,17 @@ import { THEMES, ACTIVE_THEME, DEFAULT_THEME } from '../../tools';
 })
 export class NgxThemesService {
 
+  public themes: Theme[];
+  public activeTheme: string;
+  public defaultTheme: string;
 
   constructor(
-    @Inject(THEMES) public themes: Theme[],
-    @Inject(ACTIVE_THEME) public activeTheme: string,
-    @Inject(DEFAULT_THEME) public defaultTheme: string,
-    @Inject(DOCUMENT) private document: any
+    @Inject(THEMES_CONFIG) public themesConfig: ThemeConfig,
+    @Inject(DOCUMENT) private document: any,
   ) {
+    this.themes = themesConfig.themes
+    this.activeTheme = themesConfig.active
+    this.defaultTheme = themesConfig.default
     this.initService();
   }
 

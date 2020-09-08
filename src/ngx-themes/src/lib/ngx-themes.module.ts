@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 // Project
 import { NgxThemesService } from './services';
-import { THEMES, ACTIVE_THEME, DEFAULT_THEME } from './tools';
+import { THEMES_CONFIG } from './tools';
 import { ThemeConfig } from './interfaces';
 
 
@@ -23,16 +23,8 @@ export class NgxThemesModule {
       ngModule: NgxThemesModule,
       providers: [
         {
-          provide: THEMES,
-          useValue: themeConfig.themes
-        },
-        {
-          provide: ACTIVE_THEME,
-          useValue: themeConfig.active
-        },
-        {
-          provide: DEFAULT_THEME,
-          useValue: themeConfig.default
+          provide: THEMES_CONFIG,
+          useValue: themeConfig,
         },
       ]
     };
