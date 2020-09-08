@@ -41,6 +41,12 @@ git clone https://github.com/fil0157/ngx-themes.git
 npm i @fil0157/ngx-themes
 ```
 
+**Install with [yarn](https://yarnpkg.com/):**
+
+``` bash
+yarn add @fil0157/ngx-themes
+```
+
 ## Documentation
 
 [The documentation](https://fil0157.github.io/ngx-themes/docs) can be found at <https://fil0157.github.io/ngx-themes>. 
