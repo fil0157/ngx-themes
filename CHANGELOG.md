@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.4 (September 8, 2020)
+- Themes tokens changed
+- Refactoring themes.ts file
+- Fix
+
 ## 2.0.3 (September 4, 2020)
 - Fix
 
