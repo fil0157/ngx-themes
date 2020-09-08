@@ -7,15 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ThemesConfig } from './config';
-import { 
-  HomeComponent, 
+import {
+  HomeComponent,
   VersionComponent,
   LicenseComponent,
   DocsComponent,
   DemoComponent,
 } from './pages';
-import { 
-  HeaderComponent, 
+import {
+  HeaderComponent,
   FooterComponent,
   SidebarComponent,
 } from './components';

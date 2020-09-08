@@ -9,11 +9,11 @@ export const LightTheme: Theme = {
         '--color': '#08f',
         '--color-primary': '#',
         '--color-secondary': '#879aab',
-        
+
         '--background': '#eff',
         '--background-primary': '#',
         '--background-secondary': '#eee',
-        
+
         '--border': '#ddf',
     }
 };

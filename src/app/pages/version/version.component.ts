@@ -18,7 +18,7 @@ export class VersionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.config = Config
+    this.config = Config;
   }
 
 }

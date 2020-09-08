@@ -46,7 +46,7 @@ export class NgxThemesService {
 
 
   getThemeOther(identifier: string = this.activeTheme): any | undefined {
-    return this.getTheme(identifier).other ? this.getTheme(identifier).other : undefined
+    return this.getTheme(identifier).other ? this.getTheme(identifier).other : undefined;
   }
 
 
@@ -65,7 +65,7 @@ export class NgxThemesService {
 
 
   getAllThemes(): Theme[] {
-    return this.themes
+    return this.themes;
   }
 
 

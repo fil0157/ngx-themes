@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
 // App
-import { 
-  HomeComponent, 
+import {
+  HomeComponent,
   VersionComponent,
   LicenseComponent,
   DocsComponent,

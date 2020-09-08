@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.config = Config
+    this.config = Config;
   }
 
 }

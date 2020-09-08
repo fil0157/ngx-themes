@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.config = Config
+    this.config = Config;
   }
 
 }

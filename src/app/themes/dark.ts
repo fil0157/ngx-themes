@@ -9,11 +9,11 @@ export const DarkTheme: Theme = {
         '--color': '#fff',
         '--color-primary': '#',
         '--color-secondary': '#aaa',
-        
+
         '--background': '#3e3e3e',
         '--background-primary': '#',
         '--background-secondary': '#555',
-        
+
         '--border': '#ddd',
     }
 };
