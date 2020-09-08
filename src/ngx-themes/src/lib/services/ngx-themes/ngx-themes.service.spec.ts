@@ -5,7 +5,7 @@ import { TestBed, getTestBed, inject } from '@angular/core/testing';
 import { NgxThemesService } from './ngx-themes.service';
 import { NgxThemesModule } from '../../ngx-themes.module';
 import { Theme, ThemeConfig } from '../../interfaces';
-import { THEMES, ACTIVE_THEME, DEFAULT_THEME } from '../../themes';
+import { THEMES, ACTIVE_THEME, DEFAULT_THEME } from '../../tools';
 
 
 

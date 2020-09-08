@@ -4,7 +4,7 @@ import { DOCUMENT } from '@angular/common';
 
 // Project
 import { Theme } from '../../interfaces/theme';
-import { THEMES, ACTIVE_THEME, DEFAULT_THEME } from '../../themes';
+import { THEMES, ACTIVE_THEME, DEFAULT_THEME } from '../../tools';
 
 
 
