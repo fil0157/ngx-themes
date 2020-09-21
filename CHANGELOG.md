@@ -1,5 +1,8 @@
 # Changelog
 
+## 3.0.0 (September 21, 2020)
+- Update Angular and libs
+
 ## 2.0.4 (September 8, 2020)
 - Themes tokens changed
 - Refactoring themes.ts file
