@@ -38,7 +38,7 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
     SidebarComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     NgxThemesModule.forRoot(ThemesConfig),
