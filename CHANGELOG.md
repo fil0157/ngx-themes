@@ -1,9 +1,7 @@
 # Changelog
 
-added ssr support
-
 ## 3.1.0 (September 24, 2020)
-- Added ssr support
+- Added SSR support
 - Fix
 
 ## 3.0.0 (September 21, 2020)
