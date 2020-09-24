@@ -1,6 +1,6 @@
 // Angular
-import { Injectable, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 // Project
 import { Theme } from '../../interfaces/theme';
@@ -18,10 +18,13 @@ export class NgxThemesService {
   public activeTheme: string;
   public defaultTheme: string;
 
+  private isBrowser: boolean;
+
   constructor(
     @Inject(THEMES_CONFIG) public themesConfig: ThemeConfig,
-    @Inject(DOCUMENT) private document: any,
+    @Inject(PLATFORM_ID) private platformId: Object,
   ) {
+    this.isBrowser = (isPlatformBrowser(this.platformId))
     this.themes = themesConfig.themes
     this.activeTheme = themesConfig.active
     this.defaultTheme = themesConfig.default
@@ -128,15 +131,15 @@ export class NgxThemesService {
       this.setProperty(key, selectTheme.values[key]);
     }
     for (const theme of this.themes) {
-      element.classList.remove(this.camelCaseToKebabCase(theme.identifier));
+      element?.classList.remove(this.camelCaseToKebabCase(theme.identifier));
     }
-    element.classList.add(this.camelCaseToKebabCase(selectTheme.identifier));
+    element?.classList.add(this.camelCaseToKebabCase(selectTheme.identifier));
   }
 
 
   setProperty(key: string, value: string): void {
     const element = this.getElement();
-    element.style.setProperty(key, value);
+    element?.style.setProperty(key, value);
   }
 
 
@@ -146,7 +149,7 @@ export class NgxThemesService {
 
 
   getElement(): HTMLElement {
-    return this.document.body;
+    if (this.isBrowser) return document.body;
   }
 
 
