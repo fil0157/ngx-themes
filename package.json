@@ -2,7 +2,7 @@
   "name": "@fil0157/ngx-themes",
   "version": "3.1.0",
   "description": "Angular module for creating themes in angular applications using native css variables",
-  "author": "fil0157",
+  "author": "fil0157 <fil0157@ya.ru>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -71,6 +71,8 @@
     "typescript": "~3.9.7",
     "zone.js": "^0.10.3"
   },
+  "peerDependencies": { },
+  "optionalDependencies": { },
   "keywords": [
     "angular",
     "angular themes",
