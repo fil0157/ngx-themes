@@ -83,3 +83,21 @@ footer {
     margin-bottom: 20px;
     opacity: .6;
 }
+
+@media only screen and (max-width : 600px) {
+    .top {
+        flex-flow: column nowrap;
+
+        &--left,
+        &--right {
+            width: 100%;
+        }
+    }
+    .bottom {
+        flex-flow: column nowrap;
+
+        &__right {
+            align-items: flex-end;
+        }
+    }
+}
