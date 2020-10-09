@@ -23,7 +23,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NgxThemesModule } from '@fil0157/ngx-themes';
-import { ThemesConfig } from './themes.config.ts';
+import { NgxThemesConfig } from './ngx-themes.config.ts';
 
 @NgModule({
     declarations: [
@@ -32,7 +32,7 @@ import { ThemesConfig } from './themes.config.ts';
     imports: [
         BrowserModule,
         NgxThemesModule
-            .forRoot(ThemesConfig)
+            .forRoot(NgxThemesConfig)
     ],
     providers: [ ],
     bootstrap: [ AppComponent ]
@@ -42,14 +42,14 @@ export class AppModule { }
 
 ## Создание файла конфигурации
 
-### Файл `themes.config.ts`
+### Файл `ngx-themes.config.ts`
 
 ```typescript
-import { ThemeConfig } from '@fil0157/ngx-themes';
+import { ThemesConfig } from '@fil0157/ngx-themes';
 import { DarkTheme } from 'src/app/themes/dark.theme.ts';
 import { LightTheme } from 'src/app/themes/light.theme.ts';
 
-export const ThemesConfig: ThemeConfig = {
+export const NgxThemesConfig: ThemesConfig = {
     themes: [
         LightTheme,
         DarkTheme,
@@ -67,7 +67,7 @@ export const ThemesConfig: ThemeConfig = {
 import { Theme } from '@fil0157/ngx-themes';
 
 export const DarkTheme: Theme = {
-    identifier: 'darkTheme',
+    id: 'darkTheme',
     values: {
         '--color': '#fff',
         '--color-primary': '#ccc',
@@ -88,7 +88,7 @@ export const DarkTheme: Theme = {
 import { Theme } from '@fil0157/ngx-themes';
 
 export const LightTheme: Theme = {
-    identifier: 'lightTheme',
+    id: 'lightTheme',
     values: {
         '--color': '#08f',
         '--color-primary': '#777',
