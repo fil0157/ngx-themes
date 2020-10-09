@@ -1,7 +1,8 @@
 // Angular
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserModule } from '@angular/platform-browser';
 
 // App
 import { AppRoutingModule } from './app-routing.module';
@@ -38,6 +39,7 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
     SidebarComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
