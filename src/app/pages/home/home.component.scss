@@ -10,7 +10,6 @@
     margin-top: 40px;
     
     .title {
-        height: 50px;
         line-height: 50px;
         font-weight: 600;
         font-size: 35px;
@@ -18,7 +17,6 @@
     
     .description {
         font-size: 20px;
-        height: 35px;
         line-height: 35px;
     }
 
@@ -27,21 +25,31 @@
         height: 30px;
         line-height: 30px;
         
-        & > span {
+        & > a {
+            color: var(--color);
             font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
         }
     }
 }
 
-.demo {
+.block {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
-    margin-top: 30px;
+
+    &--item {
+        margin: 10px 0;
+        display: flex;
+        flex-flow: row nowrap;
+    }
 
     &--button {
-        height: 34px;
-        line-height: 30px;
+        width: 100%;
+        text-align: center;
+        height: 84px;
+        line-height: 80px;
         padding: 0 10px;
         margin: 0 10px;
         color: var(--color);
@@ -57,10 +65,5 @@
             background: #ffffff50;
             opacity: 1;
         }
-
-        &__more {
-            border: none;
-            line-height: 34px;
-        }
-    } 
+    }
 }
