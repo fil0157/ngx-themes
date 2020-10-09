@@ -1,3 +1,3 @@
 export * from './light';
 export * from './dark';
-export * from './blue';
+export * from './custom';
