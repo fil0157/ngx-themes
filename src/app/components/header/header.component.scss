@@ -10,26 +10,7 @@ header {
 .container {
     display: flex;
     flex-flow: row nowrap;
-}
-
-a.link {
-    height: 34px;
-    line-height: 30px;
-    padding: 0 10px;
-    margin: 0 10px;
-    color: var(--color);
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 2px solid var(--border);
-    border-radius: 10px;
-    opacity: .8;
-    transition: .25s;
-    
-    &:hover {
-        background: #ffffff50;
-        opacity: 1;
-    }
+    justify-content: center;
 }
 
 .logo {
@@ -40,12 +21,12 @@ a.link {
         height: 34px;
         line-height: 34px;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 21px;
         cursor: pointer;
-        
-        &__light {
-            font-weight: 400;
+
+        &__bold {
+            font-weight: 600;
         }
     }
 }
@@ -60,5 +41,5 @@ a.link {
     text-decoration: none;
     cursor: pointer;
     opacity: .8;
-    margin: 0 auto 0 5px;
+    margin: 0 0 0 5px;
 }
