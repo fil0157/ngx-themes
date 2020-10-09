@@ -4,7 +4,7 @@ import { Theme } from '@fil0157/ngx-themes';
 
 
 export const LightTheme: Theme = {
-    identifier: 'lightTheme',
+    id: 'lightTheme',
     values: {
         '--color': '#08f',
         '--color-primary': '#',

@@ -12,7 +12,7 @@ import { THEMES_CONFIG } from '../../tools';
 const ThemesConfig: ThemesConfig = {
   themes: [
     {
-      identifier: 'lightTheme',
+      id: 'lightTheme',
       values: {
         '--color': '#fff',
         '--background': '#000',
@@ -22,14 +22,14 @@ const ThemesConfig: ThemesConfig = {
       }
     },
     {
-      identifier: 'darkTheme',
+      id: 'darkTheme',
       values: {
         '--color': '#000',
         '--background': '#fff',
       }
     },
     {
-      identifier: 'blueTheme',
+      id: 'blueTheme',
       values: {
         '--color': '#00f',
         '--background': '#003',
@@ -41,7 +41,7 @@ const ThemesConfig: ThemesConfig = {
 };
 
 const FakeTheme: Theme = {
-  identifier: 'fakeTheme',
+  id: 'fakeTheme',
   values: {
     '--color': '#111',
     '--background': '#222',
@@ -425,7 +425,7 @@ describe('NgxThemesService', () => {
       expect(service.themes).toEqual(ThemesConfig.themes);
       service.updateTheme('lightTheme', {'--color': '#666'});
       expect(service.themes[0]).toEqual({
-        identifier: 'lightTheme',
+        id: 'lightTheme',
         values: {'--color': '#666', '--background': '#000'},
         other: {name: 'light'}
       });

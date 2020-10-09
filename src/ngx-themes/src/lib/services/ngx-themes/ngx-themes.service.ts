@@ -34,27 +34,27 @@ export class NgxThemesService {
 
   initService(): void {
     if (!this.themes.length) throw new Error(`You have no themes.`);
-    if (!this.defaultTheme || (this.themes.findIndex(f => f.identifier === this.defaultTheme) === -1)) {
-      this.defaultTheme = (this.themes.findIndex(f => f.identifier === this.defaultTheme) === -1) ? this.themes[0].identifier : this.activeTheme;
+    if (!this.defaultTheme || (this.themes.findIndex(f => f.id === this.defaultTheme) === -1)) {
+      this.defaultTheme = (this.themes.findIndex(f => f.id === this.defaultTheme) === -1) ? this.themes[0].id : this.activeTheme;
     }
-    if (!this.activeTheme || (this.themes.findIndex(f => f.identifier === this.activeTheme) === -1)) {
-      this.activeTheme = this.defaultTheme || this.themes[0].identifier;
+    if (!this.activeTheme || (this.themes.findIndex(f => f.id === this.activeTheme) === -1)) {
+      this.activeTheme = this.defaultTheme || this.themes[0].id;
     }
     this.applyTheme(this.activeTheme);
   }
 
 
-  getTheme(identifier: string): Theme {
-    const theme = this.themes.find(f => f.identifier === identifier);
+  getTheme(id: string): Theme {
+    const theme = this.themes.find(f => f.id === id);
     if (!theme) {
-      throw new Error(`Theme not found: '${identifier}'`);
+      throw new Error(`Theme not found: '${id}'`);
     }
     return theme;
   }
 
 
-  getThemeOther(identifier: string = this.activeTheme): any | undefined {
-    return this.getTheme(identifier).other ? this.getTheme(identifier).other : undefined;
+  getThemeOther(id: string = this.activeTheme): any | undefined {
+    return this.getTheme(id).other ? this.getTheme(id).other : undefined;
   }
 
 
@@ -77,8 +77,8 @@ export class NgxThemesService {
   }
 
 
-  useTheme(identifier: string): void {
-    this.activeTheme = identifier;
+  useTheme(id: string): void {
+    this.activeTheme = id;
     this.applyTheme(this.activeTheme);
   }
 
@@ -90,10 +90,10 @@ export class NgxThemesService {
 
 
   toggleTheme(firstTheme: number = 0, secondTheme: number = 1): void {
-    if (this.activeTheme === this.themes[firstTheme].identifier) {
-      this.activeTheme = this.themes[secondTheme] ? this.themes[secondTheme].identifier : this.defaultTheme;
+    if (this.activeTheme === this.themes[firstTheme].id) {
+      this.activeTheme = this.themes[secondTheme] ? this.themes[secondTheme].id : this.defaultTheme;
     } else {
-      this.activeTheme = this.themes[firstTheme].identifier;
+      this.activeTheme = this.themes[firstTheme].id;
     }
     this.applyTheme(this.activeTheme);
   }
@@ -104,36 +104,36 @@ export class NgxThemesService {
   }
 
 
-  removeTheme(identifier: string) {
-    const themeIndex: number = this.themes.findIndex(f => f.identifier === identifier);
+  removeTheme(id: string) {
+    const themeIndex: number = this.themes.findIndex(f => f.id === id);
     if (themeIndex !== -1) this.themes.splice(themeIndex, 1);
     this.initService();
   }
 
 
-  updateTheme(identifier: string, values: { [key: string]: string; }) {
-    const theme = this.getTheme(identifier);
+  updateTheme(id: string, values: { [key: string]: string; }) {
+    const theme = this.getTheme(id);
     theme.values = {
       ...theme.values,
       ...values
     };
 
-    if (identifier === this.activeTheme) {
-      this.applyTheme(identifier);
+    if (id === this.activeTheme) {
+      this.applyTheme(id);
     }
   }
 
 
-  applyTheme(identifier: string): void {
+  applyTheme(id: string): void {
     const element: HTMLElement = this.getElement();
-    const selectTheme: Theme = this.getTheme(identifier);
+    const selectTheme: Theme = this.getTheme(id);
     for (const key in selectTheme.values) {
       this.setProperty(key, selectTheme.values[key]);
     }
     for (const theme of this.themes) {
-      element?.classList.remove(this.camelCaseToKebabCase(theme.identifier));
+      element?.classList.remove(this.camelCaseToKebabCase(theme.id));
     }
-    element?.classList.add(this.camelCaseToKebabCase(selectTheme.identifier));
+    element?.classList.add(this.camelCaseToKebabCase(selectTheme.id));
   }
 
 
