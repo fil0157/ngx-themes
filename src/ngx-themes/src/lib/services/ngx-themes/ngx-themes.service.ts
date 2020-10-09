@@ -5,7 +5,7 @@ import { isPlatformBrowser } from '@angular/common';
 // Project
 import { Theme } from '../../interfaces/theme';
 import { THEMES_CONFIG } from '../../tools';
-import { ThemeConfig } from '../../interfaces';
+import { ThemesConfig } from '../../interfaces';
 
 
 
@@ -21,7 +21,7 @@ export class NgxThemesService {
   private isBrowser: boolean;
 
   constructor(
-    @Inject(THEMES_CONFIG) public themesConfig: ThemeConfig,
+    @Inject(THEMES_CONFIG) public themesConfig: ThemesConfig,
     @Inject(PLATFORM_ID) private platformId: Object,
   ) {
     this.isBrowser = (isPlatformBrowser(this.platformId))

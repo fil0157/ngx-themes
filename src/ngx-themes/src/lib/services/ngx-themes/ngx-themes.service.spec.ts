@@ -4,12 +4,12 @@ import { TestBed, getTestBed, inject } from '@angular/core/testing';
 // Project
 import { NgxThemesService } from './ngx-themes.service';
 import { NgxThemesModule } from '../../ngx-themes.module';
-import { Theme, ThemeConfig } from '../../interfaces';
+import { Theme, ThemesConfig } from '../../interfaces';
 import { THEMES_CONFIG } from '../../tools';
 
 
 
-const ThemesConfig: ThemeConfig = {
+const ThemesConfig: ThemesConfig = {
   themes: [
     {
       identifier: 'lightTheme',

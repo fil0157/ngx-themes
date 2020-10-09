@@ -1,12 +1,12 @@
 // Project
-import { ThemeConfig } from '@fil0157/ngx-themes';
+import { ThemesConfig } from '@fil0157/ngx-themes';
 
 // App
 import { DarkTheme, LightTheme, BlueTheme } from 'src/app/themes';
 
 
 
-export const ThemesConfig: ThemeConfig = {
+export const NgxThemesConfig: ThemesConfig = {
     themes: [
         LightTheme,
         DarkTheme,

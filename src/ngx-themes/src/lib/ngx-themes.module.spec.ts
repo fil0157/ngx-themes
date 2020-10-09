@@ -2,7 +2,7 @@
 import { NgxThemesModule } from '@fil0157/ngx-themes';
 
 // App
-import { ThemesConfig } from 'src/app/config';
+import { NgxThemesConfig } from 'src/app/config';
 
 
 
@@ -23,11 +23,11 @@ describe('NgxThemesModule', () => {
   describe('forRoot()', () => {
 
     it('get forRoot()', () => {
-      expect(typeof NgxThemesModule.forRoot(ThemesConfig)).toEqual('object');
+      expect(typeof NgxThemesModule.forRoot(NgxThemesConfig)).toEqual('object');
     });
     it('forRoot() is object', () => {
-      expect(NgxThemesModule.forRoot(ThemesConfig)).toBeInstanceOf(Object);
-      expect(typeof NgxThemesModule.forRoot(ThemesConfig)).toEqual('object');
+      expect(NgxThemesModule.forRoot(NgxThemesConfig)).toBeInstanceOf(Object);
+      expect(typeof NgxThemesModule.forRoot(NgxThemesConfig)).toEqual('object');
     });
 
   });

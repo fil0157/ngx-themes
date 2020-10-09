@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 // App
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ThemesConfig } from './config';
+import { NgxThemesConfig } from './config';
 import {
   HomeComponent,
   VersionComponent,
@@ -41,7 +41,7 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
-    NgxThemesModule.forRoot(ThemesConfig),
+    NgxThemesModule.forRoot(NgxThemesConfig),
   ],
   providers: [ ],
   bootstrap: [AppComponent]

@@ -1,2 +1,2 @@
 export * from './config';
-export * from './themes.config';
+export * from './ngx-themes.config';
