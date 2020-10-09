@@ -214,20 +214,6 @@ export class AppComponent {
 
 `HTMLElement` Элемент `body`
 
-### `camelCaseToKebabCase(expression: string)`
-
-> Преобразовывавет `camelCase` в `kebab-case`
-
-#### Parameters
-
-| name              | тип               | описание              |
-| :---------------- | :---------------: | :-------------------- |
-| expression        | `string`          | входное выражение     |
-
-#### Returns
-
-`string` Преоразованное выражение
-
 ---
 
 > *Чтобы получить более подробную информацию о доступных методах, их параметрах и том, что они возвращают, взгляните на файл [ngx-smart-modal.service.ts](https://github.com/fil0157/ngx-themes/blob/master/src/ngx-themes/src/lib/services/ngx-themes/ngx-themes.service.ts) (хорошо документирован).

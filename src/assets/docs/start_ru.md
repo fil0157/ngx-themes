@@ -31,7 +31,8 @@ import { ThemesConfig } from './themes.config.ts';
     ],
     imports: [
         BrowserModule,
-        NgxThemesModule.forRoot(ThemesConfig)
+        NgxThemesModule
+            .forRoot(ThemesConfig)
     ],
     providers: [ ],
     bootstrap: [ AppComponent ]
