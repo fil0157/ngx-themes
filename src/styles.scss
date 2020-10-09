@@ -7,6 +7,9 @@
 @import './app/styles/base';
 
 
+pre, code.language-typescript {
+    white-space: pre-wrap;
+}
 
 table {
     width: 100%;
