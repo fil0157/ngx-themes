@@ -1,31 +1,57 @@
-# @fil0157/ngx-themes
+<div align="center">
+  <a href="https://fil0157.github.io/ngx-themes">
+    <img src="src/assets/www/icon512x512.png" width="242" height="242" alt="ngx-themes" />
+  </a>
+</div>
 
-> `@fil0157/ngx-themes` is a `Angular` library for implementing and managing themes in any `Angular` application.
-The project was created using the current versions of `TypeScript` and `Angular`.
+<h1 align="center">@fil0157/ngx-themes</h1>
 
-[![license](https://badgen.net/npm/license/@fil0157/ngx-themes)](LICENSE.md)
-[![npm](https://badgen.net/npm/v/@fil0157/ngx-themes)](https://www.npmjs.com/package/@fil0157/ngx-themes)
-[![downloads](https://badgen.net/npm/dt/@fil0157/ngx-themes)](https://www.npmjs.com/package/@fil0157/ngx-themes)
-[![release](https://badgen.net/github/release/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes/releases)
-[![releases](https://badgen.net/github/releases/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes/releases)
+<div align="center">
+  <a href="https://npmjs.org/package/ngx-themes">
+    <img alt="npm" src="https://img.shields.io/npm/v/ngx-themes.svg?labelColor=da248d&color=6ead0a" />
+  </a>
+  <a href="https://travis-ci.org/fil0157/ngx-themes">
+    <img alt="build" src="https://img.shields.io/travis/fil0157/ngx-themes/master.svg?branch=master&labelColor=da248d&color=6ead0a" />
+  </a>
+  <a href="https://npmjs.org/package/ngx-themes">
+    <img alt="no dependencies" src="https://img.shields.io/david/fil0157/ngx-themes.svg?labelColor=da248d&color=6ead0a" />
+  </a>
+  <a href="https://bundlephobia.com/result?p=ngx-themes">
+    <img alt="tree-shakeable" src="https://badgen.net/bundlephobia/tree-shaking/ngx-themes?labelColor=da248d&color=6ead0a" />
+  </a>
+  <a href="https://npmjs.org/package/ngx-themes">
+    <img alt="types included" src="https://badgen.net/npm/types/ngx-themes?labelColor=da248d&color=6ead0a" />
+  </a>
+</div>
 
-[![commits](https://badgen.net/github/commits/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes/commits/master)
-[![commit](https://badgen.net/github/last-commit/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes/commits/master)
-[![install size](https://badgen.net/packagephobia/install/@fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
-[![publish size](https://badgen.net/packagephobia/publish/@fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
-
-[![dep](https://badgen.net/david/dep/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
-[![dev](https://badgen.net/david/dev/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
-[![peer](https://badgen.net/david/peer/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
-[![optional](https://badgen.net/david/optional/fil0157/ngx-themes)](https://github.com/fil0157/ngx-themes)
+<div align="center">
+  <strong>@fil0157/ngx-themes</strong> is a Angular module for creating themes in Angular applications using native css variables.
+</div>
 
 ## Table of Contents
 
+- [Features](#Features)
+- [Demo](#Demo)
 - [Quickstart](#Quickstart)
 - [Documentation](#documentation)
+- [Roadmap](#Roadmap)
 - [Changelog](#Changelog)
 - [Copyright](#Copyright)
 - [MIT License](#MIT-License)
+
+## Features
+
+<!-- - **Small**: Just 1,8 KB (minified and gzipped). [Size Limit](https://github.com/ai/size-limit) controls the size. -->
+- **Tree-shakeable**: Only the parts you use will be imported into your app's bundle.
+- **Fast**: Built with functional components only.
+- **Bulletproof**: Written in strict TypeScript and covered by 80+ tests.
+- **Simple**: The interface is straight forward and easy to use.
+- **Mobile-friendly**: Works well on mobile devices and touch screens.
+- **No dependencies**
+
+## Demo
+
+- [Website](https://fil0157.github.io/ngx-themes)
 
 ## Quickstart
 
@@ -51,6 +77,11 @@ yarn add @fil0157/ngx-themes
 
 [The documentation](https://fil0157.github.io/ngx-themes/docs) can be found at <https://fil0157.github.io/ngx-themes>. 
 
+## Roadmap
+
+- [x] TypeScript support
+- [] Angular Universal support (SSR)
+
 ## Changelog
 
 For changelogs, check out [the Releases section of @fil0157/ngx-themes](https://github.com/fil0157/ngx-themes/releases)
@@ -62,6 +93,7 @@ Code Copyright 2020 @fil0157/ngx-themes.
 
 ## MIT License
 
+```
 Copyright (c) 2020 @fil0157/ngx-themes
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -81,3 +113,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
