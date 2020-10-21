@@ -1,6 +1,6 @@
 {
   "name": "@fil0157/ngx-themes",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "Angular module for creating themes in angular applications using native css variables",
   "author": "fil0157 <fil0157@ya.ru>",
   "license": "MIT",

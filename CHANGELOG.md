@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.0 (October 21, 2020)
+- Interface 'Theme' field 'identifier' rename to 'id'
+- Interface 'ThemeConfig' rename to 'ThemesConfig'
+- Fix
+
 ## 3.1.0 (September 24, 2020)
 - Added SSR support
 - Fix
