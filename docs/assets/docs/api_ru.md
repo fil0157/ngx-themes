@@ -30,7 +30,7 @@ export class AppComponent {
 
 `void | Error` Ничего или ошибка
 
-### `getTheme(identifier: string)`
+### `getTheme(id: string)`
 
 > Возвращает тему по ее идентификатору
 
@@ -38,13 +38,13 @@ export class AppComponent {
 
 | параметр          | тип               | описание           |
 | :---------------- | :---------------: | :----------------- |
-| identifier        | `string`          | идентификатор темы |
+| id                | `string`          | идентификатор темы |
 
 #### Returns
 
 `Theme | Error` Тема с тем же идентификатором или ошибка
 
-### `getThemeOther(identifier: string = this.activeTheme)`
+### `getThemeOther(id: string = this.activeTheme)`
 
 > Возвращает объект прочее темы по ее идентификатору. 
 > По умолчанию обращается к активной теме
@@ -53,7 +53,7 @@ export class AppComponent {
 
 | name              | тип               | описание           |
 | :---------------- | :---------------: | :----------------- |
-| identifier        | `string`          | идентификатор темы |
+| id                | `string`          | идентификатор темы |
 
 #### Returns
 
@@ -83,7 +83,7 @@ export class AppComponent {
 
 `Theme[]` Массив из всех тем
 
-### `useTheme(identifier: string)`
+### `useTheme(id: string)`
 
 > Меняет активную тему на выбранную по ее идентификатору
 
@@ -91,7 +91,7 @@ export class AppComponent {
 
 | name              | тип               | описание           |
 | :---------------- | :---------------: | :----------------- |
-| identifier        | `string`          | идентификатор темы |
+| id                | `string`          | идентификатор темы |
 
 #### Returns
 
@@ -134,7 +134,7 @@ export class AppComponent {
 
 `void` Ничего
 
-### `removeTheme(identifier: string)`
+### `removeTheme(id: string)`
 
 > Удаляет тему по её идентификатору
 
@@ -142,13 +142,13 @@ export class AppComponent {
 
 | name              | тип               | описание              |
 | :---------------- | :---------------: | :-------------------- |
-| identifier        | `string`          | идентификатор темы    |
+| id                | `string`          | идентификатор темы    |
 
 #### Returns
 
 `void` Ничего
 
-### `updateTheme(identifier: string, values: { [key: string]: string; })`
+### `updateTheme(id: string, values: { [key: string]: string; })`
 
 > Обновляет выбранные значения темы по её идентификатору
 
@@ -156,14 +156,14 @@ export class AppComponent {
 
 | name              | тип                          | описание                |
 | :---------------- | :--------------------------: | :---------------------- |
-| identifier        | `string`                     | идентификатор темы      |
+| id                | `string`                     | идентификатор темы      |
 | values            | `{ [key: string]: string; }` | значения для обновления |
 
 #### Returns
 
 `void` Ничего
 
-### `applyTheme(identifier: string)`
+### `applyTheme(id: string)`
 
 > Применяет тему по её идентификатору
 
@@ -171,7 +171,7 @@ export class AppComponent {
 
 | name              | тип               | описание              |
 | :---------------- | :---------------: | :-------------------- |
-| identifier        | `string`          | идентификатор темы    |
+| id                | `string`          | идентификатор темы    |
 
 #### Returns
 
@@ -213,20 +213,6 @@ export class AppComponent {
 #### Returns
 
 `HTMLElement` Элемент `body`
-
-### `camelCaseToKebabCase(expression: string)`
-
-> Преобразовывавет `camelCase` в `kebab-case`
-
-#### Parameters
-
-| name              | тип               | описание              |
-| :---------------- | :---------------: | :-------------------- |
-| expression        | `string`          | входное выражение     |
-
-#### Returns
-
-`string` Преоразованное выражение
 
 ---
 

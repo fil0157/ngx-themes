@@ -23,14 +23,14 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
     NgxThemesModule.forRoot({
         themes: [
             {
-                identifier: 'lightTheme',
+                id: 'lightTheme',
                 values: {
                     '--color': '#08f',
                     '--background': '#eff',
                 }
             },
             {
-                identifier: 'darkTheme',
+                id: 'darkTheme',
                 values: {
                     '--color': '#fff',
                     '--background': '#3e3e3e',
