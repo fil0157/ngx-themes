@@ -7,7 +7,6 @@ import { BrowserModule } from '@angular/platform-browser';
 // App
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgxThemesConfig } from './config';
 import {
   HomeComponent,
   VersionComponent,
@@ -21,8 +20,8 @@ import {
   SidebarComponent,
 } from './components';
 
-// Project
-import { NgxThemesModule } from '@fil0157/ngx-themes';
+// Modules
+import { CoreModule } from './core/core.module';
 
 
 
@@ -39,11 +38,11 @@ import { NgxThemesModule } from '@fil0157/ngx-themes';
     SidebarComponent,
   ],
   imports: [
+    CoreModule,
     FormsModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
-    NgxThemesModule.forRoot(NgxThemesConfig),
   ],
   providers: [ ],
   bootstrap: [AppComponent]

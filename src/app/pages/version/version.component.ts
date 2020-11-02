@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // App
-import { Config } from 'src/app/config';
+import { Config } from 'src/app/core/configs/config';
 
 
 

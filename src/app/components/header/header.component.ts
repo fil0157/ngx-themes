@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // App
-import { Config } from 'src/app/config';
+import { Config } from 'src/app/core/configs/config';
 
 // Project
 import { NgxThemesService } from '@fil0157/ngx-themes';

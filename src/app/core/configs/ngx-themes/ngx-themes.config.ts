@@ -2,7 +2,9 @@
 import { ThemesConfig } from '@fil0157/ngx-themes';
 
 // App
-import { DarkTheme, LightTheme, CustomTheme } from 'src/app/themes';
+import { DarkTheme } from './themes/dark';
+import { LightTheme } from './themes/light';
+import { CustomTheme } from './themes/custom';
 
 
 
