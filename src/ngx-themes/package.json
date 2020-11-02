@@ -2,35 +2,36 @@
   "name": "@fil0157/ngx-themes",
   "version": "4.0.0",
   "description": "Angular module for creating themes in angular applications using native css variables",
-  "author": "fil0157",
+  "author": "fil0157 <fil0157@ya.ru>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fil0157/ngx-themes.git"
   },
-  "homepage": "https://fil0157.github.io/ngx-themes",
+  "homepage": "https://ngx-themes.fil0157.ru",
+  "bugs": {
+    "url": "https://github.com/fil0157/ngx-themes/issues"
+  },
   "peerDependencies": {
-    "@angular/common": "^9.1.9",
-    "@angular/core": "^9.1.9"
+    "@angular/common": "^10.1.2",
+    "@angular/core": "^10.1.2"
   },
   "dependencies": {
     "tslib": "^2.0.0"
-},
+  },
   "keywords": [
     "angular",
-    "angular themes",
-    "ngx",
-    "ngx-themes",
     "themes",
-    "frontand",
-    "typescript",
-    "javascript",
-    "js",
-    "ts",
+    "ngx",
     "page theme",
-    "module",
-    "css",
-    "variables",
-    "castom theme"
-  ]
+    "variables"
+  ],
+  "main": "bundles/fil0157-ngx-themes.umd.js",
+  "module": "fesm2015/fil0157-ngx-themes.js",
+  "es2015": "fesm2015/fil0157-ngx-themes.js",
+  "esm2015": "esm2015/fil0157-ngx-themes.js",
+  "fesm2015": "fesm2015/fil0157-ngx-themes.js",
+  "typings": "fil0157-ngx-themes.d.ts",
+  "metadata": "fil0157-ngx-themes.metadata.json",
+  "sideEffects": false
 }
