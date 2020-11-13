@@ -27,6 +27,8 @@ import { PopupColorPickerComponent } from 'src/app/components/popup-color-picker
 
 // Modules
 import { CoreModule } from './core/core.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -51,6 +53,7 @@ import { CoreModule } from './core/core.module';
     HttpClientModule,
     AngularColorfulModule,
     BrowserAnimationsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [ ],
   bootstrap: [AppComponent]
