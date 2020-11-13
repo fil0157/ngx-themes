@@ -124,6 +124,15 @@ export class NgxThemesService {
   }
 
 
+  public updateThemeProperty(id: string, key: string, value: string): void {
+    const theme = this.getTheme(id);
+    theme.values[key] = value;
+    if (id === this.activeTheme) {
+      this.applyTheme(id);
+    }
+  }
+
+
   applyTheme(id: string): void {
     const element: HTMLElement = this.getElement();
     const selectTheme: Theme = this.getTheme(id);

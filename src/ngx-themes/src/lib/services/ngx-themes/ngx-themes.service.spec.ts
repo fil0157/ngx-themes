@@ -436,6 +436,35 @@ describe('NgxThemesService', () => {
 
 
 
+  describe('updateThemeProperty()', () => {
+    it('be truthy', () => {
+      expect(service.updateThemeProperty).toBeTruthy();
+    });
+    it('be called', () => {
+      spyOn(service, 'updateThemeProperty');
+      service.updateThemeProperty('lightTheme', '--color', '#666');
+      expect(service.updateThemeProperty).toHaveBeenCalled();
+    });
+    it(`be called with params`, () => {
+      spyOn(service, 'updateThemeProperty');
+      service.updateThemeProperty('lightTheme', '--color', '#666');
+      expect(service.updateThemeProperty).toHaveBeenCalledWith('lightTheme', '--color', '#666');
+    });
+    it('update theme', () => {
+      expect(service.themes).toEqual(ThemesConfig.themes);
+      service.updateThemeProperty('lightTheme', '--color', '#664');
+      expect(service.themes[0]).toEqual({
+        id: 'lightTheme',
+        values: {'--color': '#664', '--background': '#000'},
+        other: {name: 'light'}
+      });
+    });
+  });
+
+
+
+
+
   describe('applyTheme()', () => {
     it('be truthy', () => {
       expect(service.applyTheme).toBeTruthy();
