@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.1.0 (November 13, 2020)
+- Add updateThemeProperty() function
+
 ## 4.0.0 (October 21, 2020)
 - Interface 'Theme' field 'identifier' rename to 'id'
 - Interface 'ThemeConfig' rename to 'ThemesConfig'
