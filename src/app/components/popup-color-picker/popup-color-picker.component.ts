@@ -19,15 +19,15 @@ import { NgxThemesService } from '@fil0157/ngx-themes';
 })
 export class PopupColorPickerComponent implements OnInit {
 
-  private _changeType: 'color' | 'background'
+  private _changeType: 'color' | 'background';
 
   @Input() public set changeType(changeType: 'color' | 'background') {
-    this._changeType = changeType
+    this._changeType = changeType;
     this.initColor = this.themes.getTheme('customTheme').values['--' + this.changeType];
   }
 
   public get changeType(): 'color' | 'background' {
-    return this._changeType
+    return this._changeType;
   }
 
   public initColor: string;
@@ -43,16 +43,16 @@ export class PopupColorPickerComponent implements OnInit {
   @Output() onClose = new EventEmitter();
 
   changeColor(value: string): void {
-    this.color = value
+    this.color = value;
   }
 
   close(): void {
-    this.onClose.emit()
+    this.onClose.emit();
   }
 
   apply(): void {
-    this.close()
-    this.themes.updateThemeProperty('customTheme', '--' + this.changeType, this.color)
+    this.close();
+    this.themes.updateThemeProperty('customTheme', '--' + this.changeType, this.color);
   }
 
 }

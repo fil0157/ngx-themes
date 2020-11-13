@@ -23,7 +23,7 @@ export class DocsComponent implements OnInit {
     private http: HttpClient,
   ) {
     activatedRoute.params.subscribe(params => {
-      this.docs(params['doc'])
+      this.docs(params.doc);
     });
   }
 

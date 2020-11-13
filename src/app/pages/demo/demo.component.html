@@ -1,59 +1,59 @@
 <main>
-    <app-header></app-header>
+  <app-header></app-header>
 
-    <div class="container">
+  <div class="container">
 
-        <div class="block">
-            <div class="block--item">
-                <div class="block--button" (click)="themes.useTheme('lightTheme')">
-                    Использовать светлую тему
-                </div>
-            </div>
+    <div class="block">
+      <div class="block--item">
+        <div class="block--button" (click)="themes.useTheme('lightTheme')">
+          Использовать светлую тему
         </div>
-
-        <div class="block">
-            <div class="block--item">
-                <div class="block--button" (click)="themes.useTheme('darkTheme')">
-                    Использовать тёмную тему
-                </div>
-            </div>
-        </div>
-
-        <div class="block">
-            <div class="block--item">
-                <div class="block--button" (click)="themes.useTheme('customTheme')">
-                    Использовать кастомную тему
-                </div>
-            </div>
-        </div>
-
-        <div class="block">
-            <div class="block--item">
-                <div class="block--button block--button__light">
-                    Изменить кастомную тему
-                </div>
-            </div>
-            <div class="block--item">
-                <div class="block--button block--button__light">
-                    Изменить цвет фона
-                </div>
-                <div class="block--button block--button" (click)="openPopupColorPicker('color')">
-                    Изменить
-                </div>
-            </div>
-            <div class="block--item">
-                <div class="block--button block--button__light">
-                    Изменить цвет текста
-                </div>
-                <div class="block--button block--button" (click)="openPopupColorPicker('background')">
-                    Изменить
-                </div>
-            </div>
-        </div>
-
+      </div>
     </div>
 
-    <app-footer></app-footer>
+    <div class="block">
+      <div class="block--item">
+        <div class="block--button" (click)="themes.useTheme('darkTheme')">
+          Использовать тёмную тему
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block--item">
+        <div class="block--button" (click)="themes.useTheme('customTheme')">
+          Использовать кастомную тему
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block--item">
+        <div class="block--button block--button__light">
+          Изменить кастомную тему
+        </div>
+      </div>
+      <div class="block--item">
+        <div class="block--button block--button__light">
+          Изменить цвет фона
+        </div>
+        <div class="block--button block--button" (click)="openPopupColorPicker('color')">
+          Изменить
+        </div>
+      </div>
+      <div class="block--item">
+        <div class="block--button block--button__light">
+          Изменить цвет текста
+        </div>
+        <div class="block--button block--button" (click)="openPopupColorPicker('background')">
+          Изменить
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <app-footer></app-footer>
 </main>
 
 <app-popup-color-picker (onClose)="closeAll()" [changeType]="changeType"></app-popup-color-picker>

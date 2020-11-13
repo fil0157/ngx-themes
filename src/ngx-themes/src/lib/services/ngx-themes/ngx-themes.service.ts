@@ -24,10 +24,10 @@ export class NgxThemesService {
     @Inject(THEMES_CONFIG) public themesConfig: ThemesConfig,
     @Inject(PLATFORM_ID) private platformId: Object,
   ) {
-    this.isBrowser = (isPlatformBrowser(this.platformId))
-    this.themes = themesConfig.themes
-    this.activeTheme = themesConfig.active
-    this.defaultTheme = themesConfig.default
+    this.isBrowser = (isPlatformBrowser(this.platformId));
+    this.themes = themesConfig.themes;
+    this.activeTheme = themesConfig.active;
+    this.defaultTheme = themesConfig.default;
     this.initService();
   }
 
