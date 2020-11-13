@@ -1,5 +1,5 @@
 // Angular
-import { Component, DoCheck, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 // Project
 import { NgxThemesService } from '@fil0157/ngx-themes';
@@ -11,25 +11,19 @@ import { NgxThemesService } from '@fil0157/ngx-themes';
   templateUrl: './demo.component.html',
   styleUrls: ['./demo.component.scss']
 })
-export class DemoComponent implements OnInit, DoCheck {
+export class DemoComponent implements OnInit {
 
-  public color: string;
-  public bgColor: string;
+  public changeType: 'color' | 'background';
 
   constructor(
     public themes: NgxThemesService,
   ) { }
 
   ngOnInit(): void {
-    this.color = this.themes.getTheme('customTheme').values['--color'];
-    this.bgColor = this.themes.getTheme('customTheme').values['--background'];
   }
 
-  ngDoCheck() {
-    this.themes.updateTheme('customTheme', {
-      '--color': this.color,
-      '--background': this.bgColor
-    })
+  closeAll() {
+    this.changeType = null
   }
 
 }

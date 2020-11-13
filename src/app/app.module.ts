@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Libs
+import { AngularColorfulModule } from 'angular-colorful';
 
 // App
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +23,7 @@ import {
   FooterComponent,
   SidebarComponent,
 } from './components';
+import { PopupColorPickerComponent } from 'src/app/components/popup-color-picker/popup-color-picker.component';
 
 // Modules
 import { CoreModule } from './core/core.module';
@@ -36,6 +41,7 @@ import { CoreModule } from './core/core.module';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    PopupColorPickerComponent,
   ],
   imports: [
     CoreModule,
@@ -43,6 +49,8 @@ import { CoreModule } from './core/core.module';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
+    AngularColorfulModule,
+    BrowserAnimationsModule,
   ],
   providers: [ ],
   bootstrap: [AppComponent]

@@ -3,8 +3,6 @@
 
     <div class="container">
 
-        <!-- <div class="title">Demo</div> -->
-
         <div class="block">
             <div class="block--item">
                 <div class="block--button" (click)="themes.useTheme('lightTheme')">
@@ -39,13 +37,17 @@
                 <div class="block--button block--button__light">
                     Изменить цвет фона
                 </div>
-                <input class="block--button" [(ngModel)]="bgColor">
+                <div class="block--button block--button" (click)="this.changeType = 'color'">
+                    Изменить
+                </div>
             </div>
             <div class="block--item">
                 <div class="block--button block--button__light">
                     Изменить цвет текста
                 </div>
-                <input class="block--button" [(ngModel)]="color">
+                <div class="block--button block--button" (click)="this.changeType = 'background'">
+                    Изменить
+                </div>
             </div>
         </div>
 
@@ -53,3 +55,5 @@
 
     <app-footer></app-footer>
 </main>
+
+<app-popup-color-picker (onClose)="closeAll()" [changeType]="changeType"></app-popup-color-picker>
