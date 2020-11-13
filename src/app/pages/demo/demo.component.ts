@@ -28,10 +28,12 @@ export class DemoComponent implements OnInit {
 
   openPopupColorPicker(changeType: 'color' | 'background') {
     if (this.changeType) {
+      if (this.changeType !== changeType) {
+        setTimeout(() => {
+          this.changeType = changeType;
+        }, 250);
+      }
       this.closeAll();
-      setTimeout(() => {
-        this.changeType = changeType;
-      }, 250);
     } else {
       this.changeType = changeType;
     }

@@ -2,42 +2,55 @@
     flex: 1 0 auto;
 }
 
-.block {
+.button {
+  display: flex;
+  height: 44px;
+  margin: 15px 0;
+  color: var(--color);
+  text-decoration: none;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  opacity: 0.8;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &--text {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1 1 100%;
+    border-radius: 5px 0 0 5px;
+    height: 100%;
+    padding: 0 16px;
 
-    &--item {
-        margin: 10px 0;
-        display: flex;
-        flex-flow: row nowrap;
+    &__light {
+      cursor: default;
     }
+  }
 
-    &--button {
-        width: 100%;
-        text-align: center;
-        height: 84px;
-        line-height: 80px;
-        padding: 0 10px;
-        margin: 0 10px;
-        color: var(--color);
-        font-weight: 600;
-        text-decoration: none;
-        cursor: pointer;
-        border: 2px solid var(--border);
-        border-radius: 10px;
-        opacity: .8;
-        transition: .25s;
-        
-        &:hover {
-            background: #ffffff50;
-            opacity: 1;
-        }
+  &--icon {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    border-left: 2px solid var(--border);
+  }
 
-        &__light {
-            opacity: 1;
-            border: none;
-            cursor: default;
-        }
+  &__light {
+    opacity: 1;
+    border: none;
+
+    > .button--text {
+      justify-content: center;
+      cursor: default;
     }
+  }
 }
