@@ -148,9 +148,25 @@ export class AppComponent {
 
 `void` Ничего
 
+### `updateThemeProperty(id: string, values: { [key: string]: string; })`
+
+> Обновляет одно выбранные значение темы по её идентификатору
+
+#### Parameters
+
+| name              | тип                          | описание                |
+| :---------------- | :--------------------------: | :---------------------- |
+| id                | `string`                     | идентификатор темы      |
+| key               | `string`                     | ключ для обновления     |
+| values            | `string`                     | значения для обновления |
+
+#### Returns
+
+`void` Ничего
+
 ### `updateTheme(id: string, values: { [key: string]: string; })`
 
-> Обновляет выбранные значения темы по её идентификатору
+> Обновляет объект значений темы по её идентификатору
 
 #### Parameters
 
