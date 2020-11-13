@@ -1,7 +1,7 @@
 .popup {
   width: 100%;
   border-radius: 20px 20px 0 0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   display: flex;
   flex-flow: column nowrap;

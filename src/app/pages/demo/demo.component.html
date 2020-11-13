@@ -37,7 +37,7 @@
                 <div class="block--button block--button__light">
                     Изменить цвет фона
                 </div>
-                <div class="block--button block--button" (click)="this.changeType = 'color'">
+                <div class="block--button block--button" (click)="openPopupColorPicker('color')">
                     Изменить
                 </div>
             </div>
@@ -45,7 +45,7 @@
                 <div class="block--button block--button__light">
                     Изменить цвет текста
                 </div>
-                <div class="block--button block--button" (click)="this.changeType = 'background'">
+                <div class="block--button block--button" (click)="openPopupColorPicker('background')">
                     Изменить
                 </div>
             </div>
