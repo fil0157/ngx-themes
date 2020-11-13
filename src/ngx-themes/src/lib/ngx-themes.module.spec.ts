@@ -2,7 +2,7 @@
 import { NgxThemesModule } from '@fil0157/ngx-themes';
 
 // App
-import { NgxThemesConfig } from 'src/app/config';
+import { NgxThemesConfig } from 'src/app/core/configs/ngx-themes/ngx-themes.config';
 
 
 
