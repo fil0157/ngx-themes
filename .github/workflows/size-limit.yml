@@ -1,0 +1,33 @@
+name: "size-limit"
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  size-limit:
+    runs-on: ubuntu-latest
+
+    env:
+      CI_JOB_NUMBER: 1
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build library
+        run: npm run lib:build
+
+      - name: Test size
+        run: npm run lib:size

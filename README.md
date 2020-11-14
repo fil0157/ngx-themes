@@ -41,7 +41,7 @@
 
 ## Features
 
-<!-- - **Small**: Just 1,8 KB (minified and gzipped). [Size Limit](https://github.com/ai/size-limit) controls the size. -->
+- **Small**: Just 1 KB (minified and gzipped). [Size Limit](https://github.com/ai/size-limit) controls the size.
 - **Tree-shakeable**: Only the parts you use will be imported into your app's bundle.
 - **Fast**: Built with functional components only.
 - **Bulletproof**: Written in strict TypeScript and covered by 80+ tests.

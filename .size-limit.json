@@ -1,0 +1,16 @@
+[
+  {
+    "name": "NgxThemesModule",
+    "path": "dist/lib/esm2015/lib/ngx-themes.module.js",
+    "import": "{ NgxThemesModule }",
+    "ignore": ["@angular", "rxjs"],
+    "limit": "1 KB"
+  },
+  {
+    "name": "NgxThemesService",
+    "path": "dist/lib/esm2015/lib/services/ngx-themes/ngx-themes.service.js",
+    "import": "{ NgxThemesServices }",
+    "ignore": ["@angular", "rxjs"],
+    "limit": "1 KB"
+  }
+]
