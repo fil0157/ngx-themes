@@ -2,6 +2,9 @@
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
+// Libs
+import { camelCaseToKebabCase } from 'functionone';
+
 // Project
 import { Theme } from '../../interfaces/theme';
 import { THEMES_CONFIG } from '../../tools';
@@ -140,9 +143,9 @@ export class NgxThemesService {
       this.setProperty(key, selectTheme.values[key]);
     }
     for (const theme of this.themes) {
-      element?.classList.remove(this.camelCaseToKebabCase(theme.id));
+      element?.classList.remove(camelCaseToKebabCase(theme.id));
     }
-    element?.classList.add(this.camelCaseToKebabCase(selectTheme.id));
+    element?.classList.add(camelCaseToKebabCase(selectTheme.id));
   }
 
 
@@ -159,13 +162,6 @@ export class NgxThemesService {
 
   getElement(): HTMLElement {
     if (this.isBrowser) return document.body;
-  }
-
-
-  camelCaseToKebabCase(expression: string): string {
-    return expression.replace(/[\w]([A-Z])/g, s => {
-      return s[0] + '-' + s[1];
-    }).toLowerCase();
   }
 
 

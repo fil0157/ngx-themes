@@ -1,0 +1,30 @@
+name: "lib-test"
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  lib-test:
+    runs-on: ubuntu-latest
+
+    env:
+      CI_JOB_NUMBER: 1
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Test library
+        run: npm run lib:test

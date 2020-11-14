@@ -47,7 +47,7 @@
 - **Bulletproof**: Written in strict TypeScript and covered by 80+ tests.
 - **Simple**: The interface is straight forward and easy to use.
 - **Mobile-friendly**: Works well on mobile devices and touch screens.
-- **No dependencies**
+- **Minimal dependencies**
 
 ## Demo
 

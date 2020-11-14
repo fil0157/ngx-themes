@@ -17,6 +17,7 @@
     "@angular/core": "^10.1.2"
   },
   "dependencies": {
+    "functionone": "^1.0.0",
     "tslib": "^2.0.0"
   },
   "keywords": [

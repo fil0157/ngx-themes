@@ -570,26 +570,4 @@ describe('NgxThemesService', () => {
 
 
 
-  describe('camelCaseToKebabCase()', () => {
-    it('be truthy', () => {
-      expect(service.camelCaseToKebabCase).toBeTruthy();
-    });
-    it('be called', () => {
-      spyOn(service, 'camelCaseToKebabCase');
-      service.camelCaseToKebabCase('lightTheme');
-      expect(service.camelCaseToKebabCase).toHaveBeenCalled();
-    });
-    it('be called with params', () => {
-      spyOn(service, 'camelCaseToKebabCase');
-      service.camelCaseToKebabCase('lightTheme');
-      expect(service.camelCaseToKebabCase).toHaveBeenCalledWith('lightTheme');
-    });
-    it('return expression', () => {
-      expect(service.camelCaseToKebabCase('fooBar')).toBe('foo-bar');
-      expect(service.camelCaseToKebabCase('fooBar')).not.toBe('foo-Bar');
-      expect(service.camelCaseToKebabCase('fooBooBar')).toBe('foo-boo-bar');
-    });
-  });
-
-
 });
