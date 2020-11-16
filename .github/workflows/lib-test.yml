@@ -27,4 +27,4 @@ jobs:
         run: npm ci
 
       - name: Test library
-        run: npm run lib:test
+        run: npm run lib:test:run
