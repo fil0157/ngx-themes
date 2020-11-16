@@ -1,5 +1,5 @@
 // Project
-import { NgxThemesModule } from '@fil0157/ngx-themes';
+import { NgxThemesModule } from './ngx-themes.module';
 
 // App
 import { NgxThemesConfig } from 'src/app/core/configs/ngx-themes/ngx-themes.config';
