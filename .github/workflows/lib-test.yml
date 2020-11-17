@@ -35,4 +35,4 @@ jobs:
         run: npm run lib:build
 
       - name: Test library
-        run: npm run lib:test:run
+        run: ng test @fil0157/ngx-themes --watch=false --browsers=ChromeHeadless

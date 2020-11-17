@@ -26,7 +26,6 @@
     "lib:start": "ng build @fil0157/ngx-themes --watch",
     "lib:build": "ng build @fil0157/ngx-themes && node tools/build-lib.js",
     "lib:test": "ng test @fil0157/ngx-themes",
-    "lib:test:run": "ng test @fil0157/ngx-themes --watch=false --browsers=ChromeHeadless",
     "lib:size": "size-limit",
     "lib:lint": "ng lint @fil0157/ngx-themes",
     "lib:lint:fix": "ng lint @fil0157/ngx-themes --fix",
