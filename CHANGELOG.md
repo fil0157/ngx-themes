@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.1.1 (November 18, 2020)
+- Fix
+
 ## 4.1.0 (November 13, 2020)
 - Add updateThemeProperty() function
 
