@@ -51,6 +51,7 @@ const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled',
   initialNavigation: 'enabled',
   scrollPositionRestoration: 'enabled',
+  relativeLinkResolution: 'legacy'
 };
 
 
