@@ -9,7 +9,7 @@ const LIB_DIR = `dist/lib`;
 
 
 const FILES = [
-    `package.json`,
+    `src/ngx-themes/package.json`,
     `CHANGELOG.md`,
     `LICENSE.md`,
     `README.md`
