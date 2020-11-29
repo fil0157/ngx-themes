@@ -1,6 +1,6 @@
 {
-  "name": "@fil0157/ngx-themes",
-  "short_name": "ngx-themes",
+  "name": "Ngx Themes",
+  "short_name": "Ngx Themes",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
