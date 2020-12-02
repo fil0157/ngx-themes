@@ -19,7 +19,7 @@ module.exports = function (config) {
       }
     },
     coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, '../../../coverage/fil0157/ngx-themes'),
+      dir: require('path').join(__dirname, '../../coverage/fil0157/ngx-themes'),
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
