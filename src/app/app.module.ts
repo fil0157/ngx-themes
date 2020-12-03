@@ -48,7 +48,7 @@ import { environment } from '../environments/environment';
   imports: [
     CoreModule,
     FormsModule,
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularColorfulModule,
