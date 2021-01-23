@@ -1,8 +1,16 @@
-name: LibTest
+name: Lib Test
 
 on:
+
   push:
+    branches:
+      - master
+      - dev
+
   pull_request:
+    branches:
+      - master
+      - dev
 
 jobs:
 
