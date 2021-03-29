@@ -3,13 +3,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
 // App
-import {
-  HomeComponent,
-  VersionComponent,
-  LicenseComponent,
-  DocsComponent,
-  DemoComponent,
-} from './pages';
+import { HomeComponent } from './pages/home/home.component';
+import { DemoComponent } from './pages/demo/demo.component';
+import { DocsComponent } from './pages/docs/docs.component';
+import { LicenseComponent } from './pages/license/license.component';
 
 
 
@@ -18,10 +15,6 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     pathMatch: 'full',
-  },
-  {
-    path: 'version',
-    component: VersionComponent,
   },
   {
     path: 'license',
@@ -47,12 +40,14 @@ const routes: Routes = [
 ];
 
 
+
 const routerOptions: ExtraOptions = {
   anchorScrolling: 'enabled',
   initialNavigation: 'enabled',
   scrollPositionRestoration: 'enabled',
   relativeLinkResolution: 'legacy'
 };
+
 
 
 @NgModule({
