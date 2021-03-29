@@ -6,7 +6,6 @@ import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { DemoComponent } from './pages/demo/demo.component';
 import { DocsComponent } from './pages/docs/docs.component';
-import { LicenseComponent } from './pages/license/license.component';
 
 
 
@@ -15,10 +14,6 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     pathMatch: 'full',
-  },
-  {
-    path: 'license',
-    component: LicenseComponent,
   },
   {
     path: 'docs',

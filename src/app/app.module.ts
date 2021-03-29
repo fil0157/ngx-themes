@@ -19,7 +19,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { DocsComponent } from './pages/docs/docs.component';
 import { DemoComponent } from './pages/demo/demo.component';
-import { LicenseComponent } from './pages/license/license.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -31,7 +30,6 @@ import { PopupColorPickerComponent } from 'src/app/components/popup-color-picker
   declarations: [
     AppComponent,
     HomeComponent,
-    LicenseComponent,
     DocsComponent,
     DemoComponent,
     HeaderComponent,
