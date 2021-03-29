@@ -10,7 +10,7 @@
 
 ```typescript
 import { Component } from '@angular/core';
-import { NgxThemesService } from '@fil0157/ngx-themes';
+import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 @Component({
     // ...

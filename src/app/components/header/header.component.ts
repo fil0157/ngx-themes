@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import { Config } from 'src/app/core/configs/config';
 
 // Project
-import { NgxThemesService } from '@fil0157/ngx-themes';
+import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 
 

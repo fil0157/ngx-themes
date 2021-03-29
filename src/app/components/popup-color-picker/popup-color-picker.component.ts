@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { popupColorPickerAnimation } from './popup-color-picker.animation';
 
 // Project
-import { NgxThemesService } from '@fil0157/ngx-themes';
+import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 
 

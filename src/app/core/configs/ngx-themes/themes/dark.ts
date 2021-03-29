@@ -1,5 +1,5 @@
 // Project
-import { Theme } from '@fil0157/ngx-themes';
+import { Theme } from '@ngx-eco/ngx-themes';
 
 
 

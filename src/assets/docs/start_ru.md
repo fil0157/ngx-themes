@@ -22,7 +22,7 @@ npm i @fil0157/ngx-themes --save
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { NgxThemesModule } from '@fil0157/ngx-themes';
+import { NgxThemesModule } from '@ngx-eco/ngx-themes';
 import { NgxThemesConfig } from './ngx-themes.config.ts';
 
 @NgModule({
@@ -45,7 +45,7 @@ export class AppModule { }
 ### Файл `ngx-themes.config.ts`
 
 ```typescript
-import { ThemesConfig } from '@fil0157/ngx-themes';
+import { ThemesConfig } from '@ngx-eco/ngx-themes';
 import { DarkTheme } from 'src/app/themes/dark.theme.ts';
 import { LightTheme } from 'src/app/themes/light.theme.ts';
 
@@ -64,7 +64,7 @@ export const NgxThemesConfig: ThemesConfig = {
 ### Файл `dark.theme.ts`
 
 ```typescript
-import { Theme } from '@fil0157/ngx-themes';
+import { Theme } from '@ngx-eco/ngx-themes';
 
 export const DarkTheme: Theme = {
     id: 'darkTheme',
@@ -85,7 +85,7 @@ export const DarkTheme: Theme = {
 ### Файл `light.theme.ts`
 
 ```typescript
-import { Theme } from '@fil0157/ngx-themes';
+import { Theme } from '@ngx-eco/ngx-themes';
 
 export const LightTheme: Theme = {
     id: 'lightTheme',
@@ -111,7 +111,7 @@ export const LightTheme: Theme = {
 
 ```typescript
 import { Component } from '@angular/core';
-import { NgxThemesService } from '@fil0157/ngx-themes';
+import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 @Component({
   selector: 'app-root',

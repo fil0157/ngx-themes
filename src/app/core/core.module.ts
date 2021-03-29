@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { NgxThemesConfig } from './configs/ngx-themes/ngx-themes.config';
 
 // Project
-import { NgxThemesModule } from '@fil0157/ngx-themes';
+import { NgxThemesModule } from '@ngx-eco/ngx-themes';
 
 
 

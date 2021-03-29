@@ -1,5 +1,5 @@
 // Project
-import { ThemesConfig } from '@fil0157/ngx-themes';
+import { ThemesConfig } from '@ngx-eco/ngx-themes';
 
 // App
 import { DarkTheme } from './themes/dark';

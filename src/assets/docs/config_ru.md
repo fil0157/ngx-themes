@@ -12,7 +12,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { NgxThemesModule } from '@fil0157/ngx-themes';
+import { NgxThemesModule } from '@ngx-eco/ngx-themes';
 
 @NgModule({
   declarations: [
