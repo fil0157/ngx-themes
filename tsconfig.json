@@ -16,8 +16,8 @@
       "dom"
     ],
     "paths": {
-      "@fil0157/ngx-themes": [
-        "dist/lib/fil0157-ngx-themes",
+      "@ngx-eco/ngx-themes": [
+        "dist/lib/ngx-eco-ngx-themes",
         "dist/lib"
       ]
     }

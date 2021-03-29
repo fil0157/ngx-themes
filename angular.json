@@ -125,7 +125,7 @@
         }
       }
     },
-    "@fil0157/ngx-themes": {
+    "@ngx-eco/ngx-themes": {
       "projectType": "library",
       "root": "src/ngx-themes",
       "sourceRoot": "src/ngx-themes/src",

@@ -1,16 +1,16 @@
 {
-  "name": "@fil0157/ngx-themes",
+  "name": "@ngx-eco/ngx-themes",
   "version": "5.0.0",
   "description": "Angular module for creating themes in angular applications using native css variables",
   "author": "fil0157 <fil0157@ya.ru>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fil0157/ngx-themes.git"
+    "url": "git+https://github.com/ngx-eco/ngx-themes.git"
   },
-  "homepage": "https://ngx-themes.fil0157.ru",
+  "homepage": "https://ngx-themes.ngx-eco.ru",
   "bugs": {
-    "url": "https://github.com/fil0157/ngx-themes/issues"
+    "url": "https://github.com/ngx-eco/ngx-themes/issues"
   },
   "peerDependencies": {
     "@angular/common": "^10.1.2",
@@ -27,12 +27,12 @@
     "page theme",
     "variables"
   ],
-  "main": "bundles/fil0157-ngx-themes.umd.js",
-  "module": "fesm2015/fil0157-ngx-themes.js",
-  "es2015": "fesm2015/fil0157-ngx-themes.js",
-  "esm2015": "esm2015/fil0157-ngx-themes.js",
-  "fesm2015": "fesm2015/fil0157-ngx-themes.js",
-  "typings": "fil0157-ngx-themes.d.ts",
-  "metadata": "fil0157-ngx-themes.metadata.json",
+  "main": "bundles/ngx-eco-ngx-themes.umd.js",
+  "module": "fesm2015/ngx-eco-ngx-themes.js",
+  "es2015": "fesm2015/ngx-eco-ngx-themes.js",
+  "esm2015": "esm2015/ngx-eco-ngx-themes.js",
+  "fesm2015": "fesm2015/ngx-eco-ngx-themes.js",
+  "typings": "ngx-eco-ngx-themes.d.ts",
+  "metadata": "ngx-eco-ngx-themes.metadata.json",
   "sideEffects": false
 }

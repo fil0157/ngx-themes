@@ -1,16 +1,16 @@
 {
-  "name": "@fil0157/ngx-themes",
+  "name": "@ngx-eco/ngx-themes",
   "version": "5.0.0",
   "description": "Angular module for creating themes in angular applications using native css variables",
   "author": "fil0157 <fil0157@ya.ru>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fil0157/ngx-themes.git"
+    "url": "git+https://github.com/ngx-eco/ngx-themes.git"
   },
-  "homepage": "https://ngx-themes.fil0157.ru",
+  "homepage": "https://ngx-themes.ngx-eco.ru",
   "bugs": {
-    "url": "https://github.com/fil0157/ngx-themes/issues"
+    "url": "https://github.com/ngx-eco/ngx-themes/issues"
   },
   "scripts": {
     "start": "ng serve",
@@ -19,13 +19,13 @@
     "lint": "ng lint ngx-themes",
     "lint:fix": "ng lint ngx-themes --fix",
     "e2e": "ng e2e",
-    "lib:start": "ng build @fil0157/ngx-themes --watch",
-    "lib:build": "ng build @fil0157/ngx-themes && node tools/build-lib.js",
-    "lib:test": "ng test @fil0157/ngx-themes",
-    "lib:test:run": "ng test @fil0157/ngx-themes --watch=false --browsers=ChromeHeadless",
+    "lib:start": "ng build @ngx-eco/ngx-themes --watch",
+    "lib:build": "ng build @ngx-eco/ngx-themes && node tools/build-lib.js",
+    "lib:test": "ng test @ngx-eco/ngx-themes",
+    "lib:test:run": "ng test @ngx-eco/ngx-themes --watch=false --browsers=ChromeHeadless",
     "lib:size": "size-limit",
-    "lib:lint": "ng lint @fil0157/ngx-themes",
-    "lib:lint:fix": "ng lint @fil0157/ngx-themes --fix",
+    "lib:lint": "ng lint @ngx-eco/ngx-themes",
+    "lib:lint:fix": "ng lint @ngx-eco/ngx-themes --fix",
     "lib:publish": "npm run lib:build && cd dist/lib && npm pack && npm publish",
     "ngcc": "ngcc"
   },

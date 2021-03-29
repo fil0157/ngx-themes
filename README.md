@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://fil0157.github.io/ngx-themes">
+  <a href="https://ngx-eco.github.io/ngx-themes">
     <img src="src/assets/www/icon512x512.png" width="242" height="242" alt="ngx-themes" />
   </a>
 </div>
@@ -10,11 +10,11 @@
   <a href="https://npmjs.org/package/ngx-themes">
     <img alt="npm" src="https://img.shields.io/npm/v/ngx-themes.svg?labelColor=da248d&color=6ead0a" />
   </a>
-  <a href="https://travis-ci.org/fil0157/ngx-themes">
-    <img alt="build" src="https://img.shields.io/travis/fil0157/ngx-themes/master.svg?branch=master&labelColor=da248d&color=6ead0a" />
+  <a href="https://travis-ci.org/ngx-eco/ngx-themes">
+    <img alt="build" src="https://img.shields.io/travis/ngx-eco/ngx-themes/master.svg?branch=master&labelColor=da248d&color=6ead0a" />
   </a>
   <a href="https://npmjs.org/package/ngx-themes">
-    <img alt="no dependencies" src="https://img.shields.io/david/fil0157/ngx-themes.svg?labelColor=da248d&color=6ead0a" />
+    <img alt="no dependencies" src="https://img.shields.io/david/ngx-eco/ngx-themes.svg?labelColor=da248d&color=6ead0a" />
   </a>
   <a href="https://bundlephobia.com/result?p=ngx-themes">
     <img alt="tree-shakeable" src="https://badgen.net/bundlephobia/tree-shaking/ngx-themes?labelColor=da248d&color=6ead0a" />
@@ -25,7 +25,7 @@
 </div>
 
 <div align="center">
-  <strong>@fil0157/ngx-themes</strong> is a Angular module for creating themes in Angular applications using native css variables.
+  <strong>@ngx-eco/ngx-themes</strong> is a Angular module for creating themes in Angular applications using native css variables.
 </div>
 
 ## Table of Contents
@@ -51,31 +51,31 @@
 
 ## Demo
 
-- [Website](https://fil0157.github.io/ngx-themes)
+- [Website](https://ngx-eco.github.io/ngx-themes)
 
 ## Quickstart
 
 **Clone the repo:**
 
 ``` bash
-git clone https://github.com/fil0157/ngx-themes.git
+git clone https://github.com/ngx-eco/ngx-themes.git
 ```
 
 **Install with [npm](https://www.npmjs.com):**
 
 ``` bash
-npm i @fil0157/ngx-themes
+npm i @ngx-eco/ngx-themes
 ```
 
 **Install with [yarn](https://yarnpkg.com/):**
 
 ``` bash
-yarn add @fil0157/ngx-themes
+yarn add @ngx-eco/ngx-themes
 ```
 
 ## Documentation
 
-[The documentation](https://fil0157.github.io/ngx-themes/docs) can be found at <https://fil0157.github.io/ngx-themes>. 
+[The documentation](https://ngx-eco.github.io/ngx-themes/docs) can be found at <https://ngx-eco.github.io/ngx-themes>. 
 
 ## Roadmap
 
@@ -84,17 +84,17 @@ yarn add @fil0157/ngx-themes
 
 ## Changelog
 
-For changelogs, check out [the Releases section of @fil0157/ngx-themes](https://github.com/fil0157/ngx-themes/releases)
+For changelogs, check out [the Releases section of @ngx-eco/ngx-themes](https://github.com/ngx-eco/ngx-themes/releases)
 or the [CHANGELOG.md](CHANGELOG.md).
 
 ## Copyright
 
-Code Copyright 2020 @fil0157/ngx-themes.
+Code Copyright 2020 @ngx-eco/ngx-themes.
 
 ## MIT License
 
 ```
-Copyright (c) 2020 @fil0157/ngx-themes
+Copyright (c) 2020 @ngx-eco/ngx-themes
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
