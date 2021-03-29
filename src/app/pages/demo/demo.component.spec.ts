@@ -1,25 +1,29 @@
+// Angular
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
+// App
 import { DemoComponent } from './demo.component';
 
-describe('DemoComponent', () => {
-  let component: DemoComponent;
-  let fixture: ComponentFixture<DemoComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [ DemoComponent ]
-    })
-    .compileComponents();
-  }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(DemoComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+// describe('DemoComponent', () => {
+//   let component: DemoComponent;
+//   let fixture: ComponentFixture<DemoComponent>;
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+//   beforeEach(waitForAsync(() => {
+//     TestBed.configureTestingModule({
+//       declarations: [ DemoComponent ]
+//     })
+//     .compileComponents();
+//   }));
+
+//   beforeEach(() => {
+//     fixture = TestBed.createComponent(DemoComponent);
+//     component = fixture.componentInstance;
+//     fixture.detectChanges();
+//   });
+
+//   it('should create', () => {
+//     expect(component).toBeTruthy();
+//   });
+// });
