@@ -1,15 +1,15 @@
 # Для начала
 
-Как использовать `@fil0157/ngx-themes` в своих проектах
+Как использовать `@ngx-eco/ngx-themes` в своих проектах
 
 ---
 
 ## Установка
 
-Для использования `@fil0157/ngx-themes` в своём проекте установите его через [npm](https://www.npmjs.com/package/@fil0157/ngx-themes):
+Для использования `@ngx-eco/ngx-themes` в своём проекте установите его через [npm](https://www.npmjs.com/package/@ngx-eco/ngx-themes):
 
 ``` 
-npm i @fil0157/ngx-themes --save
+npm i @ngx-eco/ngx-themes --save
 ```
 
 ## Внедрение в `Angular`

@@ -4,7 +4,7 @@
   </a>
 </div>
 
-<h1 align="center">@fil0157/ngx-themes</h1>
+<h1 align="center">@ngx-eco/ngx-themes</h1>
 
 <div align="center">
   <a href="https://npmjs.org/package/ngx-themes">

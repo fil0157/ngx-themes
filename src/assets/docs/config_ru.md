@@ -6,7 +6,7 @@
 
 ## Использование
 
-Для использования всех возможностей `@fil0157/ngx-themes` вам необходимо импортировать модуль `NgxThemesModule` в свой `NgModule` с некоторыми параметрами. Вот пример использования:
+Для использования всех возможностей `@ngx-eco/ngx-themes` вам необходимо импортировать модуль `NgxThemesModule` в свой `NgModule` с некоторыми параметрами. Вот пример использования:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
