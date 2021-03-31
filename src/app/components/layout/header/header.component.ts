@@ -10,7 +10,7 @@ import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 
 @Component({
-  selector: 'app-header',
+  selector: 'header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })

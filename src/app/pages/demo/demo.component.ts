@@ -7,7 +7,7 @@ import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 
 @Component({
-  selector: 'app-demo',
+  selector: 'demo',
   templateUrl: './demo.component.html',
   styleUrls: ['./demo.component.scss']
 })

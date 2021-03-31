@@ -9,7 +9,7 @@ import * as marked from 'marked';
 
 
 @Component({
-  selector: 'app-docs',
+  selector: 'docs',
   templateUrl: './docs.component.html',
   styleUrls: ['./docs.component.scss']
 })
