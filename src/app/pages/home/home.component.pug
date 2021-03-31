@@ -1,0 +1,39 @@
+main
+
+  header
+
+  div.container
+
+    div.preview
+      div.title @fil0157/ngx-themes
+      div.description Angular module for creating themes in angular applications using native css variables
+      div.author Author:
+        a(
+          target="_blank",
+          href="https://github.com/fil0157") @fil0157
+
+    div.block
+      div.block--item
+        div.block--button((click)="ngxThemes.toggleTheme()") Toggle theme
+
+      div.block--item
+        div.block--button((click)="ngxThemes.useTheme('lightTheme')") Light theme
+        div.block--button((click)="ngxThemes.useTheme('darkTheme')") Dark theme
+
+      div.block--item
+        div.block--button(routerLink="demo") More demo
+
+    div.block
+      div.block--item
+        a.block--button(
+          target="_blank",
+          href="https://github.com/fil0157/ngx-themes") Git Hub
+        a.block--button(
+          target="_blank",
+          href="https://www.npmjs.com/package/@fil0157/ngx-themes") NPM
+
+    div.block
+        a.block--item
+            div.block--button(routerLink="/docs") Docs
+
+  footer

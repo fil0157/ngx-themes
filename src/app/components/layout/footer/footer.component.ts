@@ -8,7 +8,7 @@ import { Config } from 'src/app/core/configs/config';
 
 @Component({
   selector: 'footer',
-  templateUrl: './footer.component.html',
+  templateUrl: './footer.component.pug',
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {

@@ -8,7 +8,7 @@ import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 @Component({
   selector: 'home',
-  templateUrl: './home.component.html',
+  templateUrl: './home.component.pug',
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {

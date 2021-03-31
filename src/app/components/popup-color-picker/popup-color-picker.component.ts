@@ -11,13 +11,15 @@ import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 @Component({
   selector: 'popup-color-picker',
-  templateUrl: './popup-color-picker.component.html',
+  templateUrl: './popup-color-picker.component.pug',
   styleUrls: ['./popup-color-picker.component.scss'],
   animations: [
     popupColorPickerAnimation,
   ],
 })
 export class PopupColorPickerComponent implements OnInit {
+
+  public previewStyle;
 
   private _changeType: 'color' | 'background';
 
@@ -35,7 +37,9 @@ export class PopupColorPickerComponent implements OnInit {
 
   constructor(
     private themes: NgxThemesService
-  ) { }
+  ) {
+    this.previewStyle = { background: this.color || this.initColor };
+  }
 
   ngOnInit(): void {
   }

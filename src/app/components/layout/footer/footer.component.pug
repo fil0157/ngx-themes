@@ -1,0 +1,34 @@
+div.container
+
+  div.top
+    div.top--left
+
+      div.top--title
+        span.top--title__bold ngx-
+        span themes
+
+      div.top--subtitle Current version: <strong>v{{ config.version }}</strong>
+
+    div.top--right
+      | Designed and built with love by
+      strong
+        a.link(href="https://github.com/fil0157"
+          target="_blank")  Filipp Chibisov
+      |  for the Angular community.
+      br
+      |  Code available on
+      a.link(target="_blank"
+        href="https://github.com/fil0157/ngx-themes")  our GitHub repository
+      |  and released under the #[strong MIT License].
+
+  div.ruler
+
+  div.bottom
+
+    div.bottom__left © 2020 - {{ thisYear }} #[strong @fil0157/ngx-themes]
+
+    div.bottom__right
+
+      a.link(routerLink="/license") MIT License
+
+      a.link(routerLink="/version") Version

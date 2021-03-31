@@ -11,7 +11,7 @@ import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 @Component({
   selector: 'header',
-  templateUrl: './header.component.html',
+  templateUrl: './header.component.pug',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
