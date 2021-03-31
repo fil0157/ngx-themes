@@ -2,34 +2,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
-// App
-import { HomeComponent } from './pages/home/home.component';
-import { DemoComponent } from './pages/demo/demo.component';
-import { DocsComponent } from './pages/docs/docs.component';
-
 
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule),
     pathMatch: 'full',
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule),
   },
   {
     path: 'docs',
-    component: DocsComponent,
+    loadChildren: () => import('./pages/docs/docs.module').then(m => m.DocsModule),
   },
   {
     path: 'docs/:doc',
-    component: DocsComponent,
+    loadChildren: () => import('./pages/docs/docs.module').then(m => m.DocsModule),
   },
   {
     path: 'demo',
-    component: DemoComponent,
-    children: [
-  //     { path: '', component: MainComponent },
-      { path: '**', redirectTo: '/demo', pathMatch: 'full' }
-    ]
+    loadChildren: () => import('./pages/demo/demo.module').then(m => m.DemoModule),
   },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
