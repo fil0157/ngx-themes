@@ -1,7 +1,7 @@
 // Angular
 import { Component, OnInit } from '@angular/core';
 
-// Project
+// App
 import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 

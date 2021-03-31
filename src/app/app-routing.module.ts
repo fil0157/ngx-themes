@@ -12,7 +12,7 @@ import { DocsComponent } from './pages/docs/docs.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule),
     pathMatch: 'full',
   },
   {

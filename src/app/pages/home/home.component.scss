@@ -1,69 +1,69 @@
 .container {
-    display: flex;
-    flex-flow: column nowrap;
-    flex: 1 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 auto;
 }
 
 .preview {
-    text-align: center;
-    color: var(--color);
-    margin-top: 40px;
-    
-    .title {
-        line-height: 50px;
-        font-weight: 600;
-        font-size: 35px;
-    }
-    
-    .description {
-        font-size: 20px;
-        line-height: 35px;
-    }
+  text-align: center;
+  color: var(--color);
+  margin-top: 40px;
 
-    .author{
-        font-size: 20px;
-        height: 30px;
-        line-height: 30px;
-        
-        & > a {
-            color: var(--color);
-            font-weight: 600;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    }
+  .title {
+      line-height: 50px;
+      font-weight: 600;
+      font-size: 35px;
+  }
+
+  .description {
+      font-size: 20px;
+      line-height: 35px;
+  }
+
+  .author{
+      font-size: 20px;
+      height: 30px;
+      line-height: 30px;
+
+      & > a {
+          color: var(--color);
+          font-weight: 600;
+          text-decoration: none;
+          cursor: pointer;
+      }
+  }
 }
 
 .block {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 
-    &--item {
-        margin: 10px 0;
-        display: flex;
-        flex-flow: row nowrap;
-    }
+  &--item {
+      margin: 10px 0;
+      display: flex;
+      flex-flow: row nowrap;
+  }
 
-    &--button {
-        width: 100%;
-        text-align: center;
-        height: 84px;
-        line-height: 80px;
-        padding: 0 10px;
-        margin: 0 10px;
-        color: var(--color);
-        font-weight: 600;
-        text-decoration: none;
-        cursor: pointer;
-        border: 2px solid var(--border);
-        border-radius: 10px;
-        opacity: .8;
-        transition: .25s;
-        
-        &:hover {
-            background: #ffffff50;
-            opacity: 1;
-        }
-    }
+  &--button {
+      width: 100%;
+      text-align: center;
+      height: 84px;
+      line-height: 80px;
+      padding: 0 10px;
+      margin: 0 10px;
+      color: var(--color);
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      opacity: .8;
+      transition: .25s;
+
+      &:hover {
+          background: #ffffff50;
+          opacity: 1;
+      }
+  }
 }

@@ -1,5 +1,5 @@
 // Angular
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 // App
 import { HeaderComponent } from './header.component';
@@ -10,12 +10,12 @@ import { HeaderComponent } from './header.component';
 //   let component: HeaderComponent;
 //   let fixture: ComponentFixture<HeaderComponent>;
 
-//   beforeEach(waitForAsync(() => {
-//     TestBed.configureTestingModule({
+//   beforeEach(async () => {
+//     await TestBed.configureTestingModule({
 //       declarations: [ HeaderComponent ]
 //     })
 //     .compileComponents();
-//   }));
+//   });
 
 //   beforeEach(() => {
 //     fixture = TestBed.createComponent(HeaderComponent);
@@ -23,7 +23,7 @@ import { HeaderComponent } from './header.component';
 //     fixture.detectChanges();
 //   });
 
-//   // it('should create', () => {
-//   //   expect(component).toBeTruthy();
-//   // });
+//   it('should create', () => {
+//     expect(component).toBeTruthy();
+//   });
 // });
