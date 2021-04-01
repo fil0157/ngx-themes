@@ -2,10 +2,10 @@
 import { TestBed, getTestBed, inject } from '@angular/core/testing';
 
 // Project
+import { Theme } from '../../interfaces/theme';
 import { NgxThemesService } from './ngx-themes.service';
-import { NgxThemesModule } from '../../ngx-themes.module';
-import { Theme, ThemesConfig } from '../../interfaces';
-import { THEMES_CONFIG } from '../../tools';
+import { THEMES_CONFIG } from '../../tools/themes-token';
+import { ThemesConfig } from '../../interfaces/themes-config';
 
 
 
