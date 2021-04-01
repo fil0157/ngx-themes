@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.0 (April 1, 2021)
+- Project renamed
+- Fix
+
 ## 5.0.0 (November 18, 2020)
 - Angular updated
 
