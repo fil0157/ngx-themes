@@ -1,11 +1,11 @@
 // Angular
-import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 
 // Project
-import { NgxThemesService } from './services';
-import { THEMES_CONFIG } from './tools';
-import { ThemesConfig } from './interfaces';
+import { THEMES_CONFIG } from './tools/themes-token';
+import { ThemesConfig } from './interfaces/themes-config';
+import { NgxThemesService } from './services/ngx-themes/ngx-themes.service';
 
 
 

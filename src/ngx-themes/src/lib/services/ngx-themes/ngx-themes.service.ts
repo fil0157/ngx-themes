@@ -1,14 +1,14 @@
 // Angular
-import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 
 // Libs
 import { camelCaseToKebabCase } from 'functionone';
 
 // Project
 import { Theme } from '../../interfaces/theme';
-import { THEMES_CONFIG } from '../../tools';
-import { ThemesConfig } from '../../interfaces';
+import { THEMES_CONFIG } from '../../tools/themes-token';
+import { ThemesConfig } from '../../interfaces/themes-config';
 
 
 

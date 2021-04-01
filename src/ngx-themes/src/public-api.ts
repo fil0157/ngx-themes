@@ -1,3 +1,9 @@
+// Modules
 export * from './lib/ngx-themes.module';
-export * from './lib/services';
-export * from './lib/interfaces';
+
+// Services
+export * from './lib/services/ngx-themes/ngx-themes.service';
+
+// Interfaces
+export * from './lib/interfaces/theme';
+export * from './lib/interfaces/themes-config';
