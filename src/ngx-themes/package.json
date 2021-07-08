@@ -13,8 +13,8 @@
     "url": "https://github.com/ngx-eco/ngx-themes/issues"
   },
   "peerDependencies": {
-    "@angular/common": "^10.1.2",
-    "@angular/core": "^10.1.2"
+    "@angular/common": ">=12.0.0 <13.0.0",
+    "@angular/core": ">=12.0.0 <13.0.0"
   },
   "dependencies": {
     "functionone": "^1.0.0",
