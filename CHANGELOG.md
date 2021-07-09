@@ -1,11 +1,14 @@
 # Changelog
 
+## 7.0.0 (June 8, 2021)
+- Angular updated (v12.1.1)
+
 ## 6.0.0 (April 1, 2021)
 - Project renamed
 - Fix
 
 ## 5.0.0 (November 18, 2020)
-- Angular updated
+- Angular updated (v11.1.0)
 
 ## 4.1.1 (November 18, 2020)
 - Fix
