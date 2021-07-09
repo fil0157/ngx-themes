@@ -3,7 +3,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 
 // Libs
-import { camelCaseToKebabCase } from 'functionone';
+import { camelCaseToKebabCase } from 'functionone/lib/name/functions/camel-case/camel-case-to-kebab-case/camel-case-to-kebab-case';
 
 // Project
 import { Theme } from '../../interfaces/theme';
