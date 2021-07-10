@@ -1,9 +1,9 @@
 # Changelog
 
-## 7.0.1 (June 9, 2021)
+## 7.0.1 (July 9, 2021)
 - Fix
 
-## 7.0.0 (June 8, 2021)
+## 7.0.0 (July 8, 2021)
 - Angular updated (v12.1.1)
 
 ## 6.0.0 (April 1, 2021)
