@@ -1,0 +1,29 @@
+
+<main>
+  <header></header>
+  <div class="container">
+    <div class="preview">
+      <div class="title">@ngx-eco/ngx-themes</div>
+      <div class="description">Angular module for creating themes in angular applications using native css variables</div>
+      <div class="author">Author:<a target="_blank" href="https://github.com/fil0157">@fil0157</a></div>
+    </div>
+    <div class="block">
+      <div class="block--item">
+        <div class="block--button" (click)="ngxThemes.toggleTheme()">Toggle theme</div>
+      </div>
+      <div class="block--item">
+        <div class="block--button" (click)="ngxThemes.useTheme('lightTheme')">Light theme</div>
+        <div class="block--button" (click)="ngxThemes.useTheme('darkTheme')">Dark theme</div>
+      </div>
+      <div class="block--item">
+        <div class="block--button" routerLink="demo">More demo</div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="block--item"><a class="block--button" target="_blank" href="https://github.com/ngx-eco/ngx-themes">Git Hub</a><a class="block--button" target="_blank" href="https://www.npmjs.com/package/@ngx-eco/ngx-themes">NPM</a></div>
+    </div>
+    <div class="block"><a class="block--item">
+        <div class="block--button" routerLink="/docs">Docs</div></a></div>
+  </div>
+  <footer></footer>
+</main>

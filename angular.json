@@ -15,11 +15,8 @@
       "prefix": "",
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "customWebpackConfig": {
-              "path": "./webpack.config.ts"
-            },
             "outputPath": "dist/ngx-themes",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -68,7 +65,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "ngx-themes:build"
           },
@@ -79,17 +76,14 @@
           }
         },
         "extract-i18n": {
-          "builder": "@angular-builders/custom-webpack:extract-i18n",
+          "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "ngx-themes:build"
           }
         },
         "test": {
-          "builder": "@angular-builders/custom-webpack:karma",
+          "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "customWebpackConfig": {
-              "path": "./webpack.config.ts"
-            },
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
@@ -118,11 +112,8 @@
           }
         },
         "e2e": {
-          "builder": "@angular-builders/custom-webpack:protractor",
+          "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "customWebpackConfig": {
-              "path": "./webpack.config.ts"
-            },
             "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "ngx-themes:serve"
           },
@@ -186,11 +177,8 @@
       "prefix": "",
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "customWebpackConfig": {
-              "path": "./webpack.config.ts"
-            },
             "outputPath": "dist/demo",
             "index": "demo/src/index.html",
             "main": "demo/src/main.ts",
@@ -237,7 +225,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "demo:build"
           },
@@ -248,17 +236,14 @@
           }
         },
         "extract-i18n": {
-          "builder": "@angular-builders/custom-webpack:extract-i18n",
+          "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "demo:build"
           }
         },
         "test": {
-          "builder": "@angular-builders/custom-webpack:karma",
+          "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "customWebpackConfig": {
-              "path": "./webpack.config.ts"
-            },
             "main": "demo/src/test.ts",
             "polyfills": "demo/src/polyfills.ts",
             "tsConfig": "demo/tsconfig.spec.json",
@@ -287,11 +272,8 @@
           }
         },
         "e2e": {
-          "builder": "@angular-builders/custom-webpack:protractor",
+          "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "customWebpackConfig": {
-              "path": "./webpack.config.ts"
-            },
             "protractorConfig": "demo/e2e/protractor.conf.js",
             "devServerTarget": "demo:serve"
           },

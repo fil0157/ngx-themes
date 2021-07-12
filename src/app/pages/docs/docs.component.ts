@@ -10,7 +10,7 @@ import * as marked from 'marked';
 
 @Component({
   selector: 'docs',
-  templateUrl: './docs.component.pug',
+  templateUrl: './docs.component.html',
   styleUrls: ['./docs.component.scss']
 })
 export class DocsComponent implements OnInit {

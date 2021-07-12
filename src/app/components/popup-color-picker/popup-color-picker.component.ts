@@ -11,7 +11,7 @@ import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 @Component({
   selector: 'popup-color-picker',
-  templateUrl: './popup-color-picker.component.pug',
+  templateUrl: './popup-color-picker.component.html',
   styleUrls: ['./popup-color-picker.component.scss'],
   animations: [
     popupColorPickerAnimation,

@@ -8,7 +8,7 @@ import { NgxThemesService } from '@ngx-eco/ngx-themes';
 
 @Component({
   selector: 'demo',
-  templateUrl: './demo.component.pug',
+  templateUrl: './demo.component.html',
   styleUrls: ['./demo.component.scss']
 })
 export class DemoComponent implements OnInit {
